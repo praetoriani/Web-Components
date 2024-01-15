@@ -7,7 +7,7 @@
 Welcome to my <strong>Web Component Repository</strong>.
 <br>
 With this repository I would like to show how easy it is to create your own web components using HTML, Javascript and CSS.
-<br><br><br>
+<br><br>
 
 ### At the beginning a short introduction
 
