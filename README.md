@@ -22,7 +22,7 @@ Today we are able to define our own HTML components and style them independently
 <br><br>
 
 ### What do we need to create our own Web Components?
-
+<!--
 Actually, I have already answered this question in my short introduction. All we need to create our own web components is:
 <br><br>
 :pushpin: Knowledge of HTML, CSS and Javascript.
@@ -32,19 +32,46 @@ Actually, I have already answered this question in my short introduction. All we
 :pushpin: A code editor (I use VS Code)
 <br>
 :pushpin: A local web server (I use the Node module http-server)
+-->
+Here are my recommendations for the basic requirements and also information about the tools I use to create the web components.
 <br><br>
-That's it.
+
+![Static Badge](https://img.shields.io/badge/Requires%20HTML%20Skills-%23525252?style=plastic&logo=html5&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+<br>You should have at least a basic knowledge of HTML.
+<br><br>
+![Static Badge](https://img.shields.io/badge/Requires%20CSS%20Skills-%23525252?style=plastic&logo=css3&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+<br>Just like with HTML, you should also be familiar with CSS
+<br><br>
+![Static Badge](https://img.shields.io/badge/Requires%20JavaScript%20Skills-%23525252?style=plastic&logo=javascript&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+<br>It is helpful if you know what classes and event handlers are<br>in JavaScript and if you know what DOM means.
+<br><br>
+![Static Badge](https://img.shields.io/badge/Recommended%3A%20VS%20Code-%23525252?style=plastic&logo=visualstudiocode&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+<br>I've been using [ **VS Code** ](https://code.visualstudio.com/) to edit my source code for many years.<br>But of course any editor works.
+<br><br>
+![Static Badge](https://img.shields.io/badge/Recommended%3A%20Chrome%20Browser-%23525252?style=plastic&logo=googlechrome&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+<br>I've also been using Google's Chrome browser for some time.<br>I mention this primarily for compatibility reasons
+<br><br>
+![Static Badge](https://img.shields.io/badge/Recommended%3A%20http%20server-%23525252?style=plastic&logo=npm&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+![Static Badge](https://img.shields.io/badge/Recommended%3A%20ngrok-%23525252?style=plastic&logo=ngrok&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+<br>To test my web components I mainly use the [ **http-server** ](https://www.npmjs.com/package/http-server) (npm module).<br>But this also requires NodeJS. An alternative would be [ **ngrok** ](https://ngrok.com/), for example
+<br><br>
+![Static Badge](https://img.shields.io/badge/Recommended%3A%20NodeJS-%23525252?style=plastic&logo=nodedotjs&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+<br>Even though I may not use [ **NodeJS** ](https://nodejs.org/en) that often, I still have it installed. It was sometimes helpful to have it .
+<br><br>
+That's it :wink:	
+<br><br>
 
 
 ### What's next?
 
 As I said at the beginning, this repo is still under construction. There is currently only one example. But there will gradually be more.
 <br><br>
-Examples of Web Components are located in the **Samples** folder.<br>Each example has a <code>README.md</code> that includes some explanation about the Web Component Sample.
+Examples of Web Components are located in the [ **Examples** ](https://github.com/praetoriani/Web-Components/tree/main/Examples) folder. Both the *Examples* folder and each example have a <code>README.md</code> which contains more detailed information.
 <br><br>
 Feel free to download and play with the code example
 
 > [!NOTE]
 > This repo is still under construction.
 > More content is coming soon ...
+
 
