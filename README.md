@@ -37,6 +37,8 @@ That's it.
 
 ### What's next?
 
-As I said at the beginning, this repo is still under construction. There is currently only one example. But there will gradually be more. Examples of Web Components are located in the **Samples** folder. Each example has a <code>README.md</code> that includes some explanation about the Web Component Sample.
+As I said at the beginning, this repo is still under construction. There is currently only one example. But there will gradually be more.
+<br><br>
+Examples of Web Components are located in the **Samples** folder.<br>Each example has a <code>README.md</code> that includes some explanation about the Web Component Sample.
 <br><br>
 Feel free to download and play with the code example
