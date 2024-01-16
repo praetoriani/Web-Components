@@ -17,6 +17,6 @@ Here you will find a list of the existing examples and a short explanation.
 
 ### Examples Overview
 
-:pushpin: **Floating Dot** <br>
+:pushpin: [**Floating Dot**](https://github.com/praetoriani/Web-Components/tree/main/Examples/floating-dot) <br>
 This example shows a simple blue circle in the bottom right corner of the page. The circle has a hover effect and is clickable.
 
