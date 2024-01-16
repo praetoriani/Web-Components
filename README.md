@@ -60,7 +60,10 @@ Here are my recommendations for the basic requirements and also information abou
 <br><br>
 That's it :wink:	
 <br><br>
+> [!IMPORTANT]
+> NodeJS is not required to create web components.
 
+<br>
 
 ### What's next?
 
