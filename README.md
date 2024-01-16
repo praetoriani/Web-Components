@@ -1,11 +1,12 @@
 # Web Components
 
-> [!NOTE]
-> This repo is still under construction
+![Static Badge](https://img.shields.io/badge/Uses%20HTML5-%23525252?style=plastic&logo=html5&logoColor=%2333bbff&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+![Static Badge](https://img.shields.io/badge/Uses%20CSS3-%23525252?style=plastic&logo=css3&logoColor=%2300cc00&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
+![Static Badge](https://img.shields.io/badge/Uses%20Javascript-%23525252?style=plastic&logo=javascript&logoColor=%23ffd633&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
 
-<br>
-Welcome to my <strong>Web Component Repository</strong>.
-<br>
+
+### Welcome to my <strong>Web Component Repository</strong>.
+
 With this repository I would like to show how easy it is to create your own web components using HTML, Javascript and CSS.
 <br><br>
 
@@ -42,3 +43,8 @@ As I said at the beginning, this repo is still under construction. There is curr
 Examples of Web Components are located in the **Samples** folder.<br>Each example has a <code>README.md</code> that includes some explanation about the Web Component Sample.
 <br><br>
 Feel free to download and play with the code example
+
+> [!NOTE]
+> This repo is still under construction.
+> More content is coming soon ...
+
