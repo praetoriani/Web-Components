@@ -56,7 +56,7 @@ Here are my recommendations for the basic requirements and also information abou
 <br>To test my web components I mainly use the [ **http-server** ](https://www.npmjs.com/package/http-server) (npm module).<br>But this also requires NodeJS. An alternative would be [ **ngrok** ](https://ngrok.com/), for example
 <br><br>
 ![Static Badge](https://img.shields.io/badge/Recommended%3A%20NodeJS-%23525252?style=plastic&logo=nodedotjs&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
-<br>Even though I may not use [ **NodeJS** ](https://nodejs.org/en) that often, I still have it installed. It was sometimes helpful to have it .
+<br>Even though I may not use [ **NodeJS** ](https://nodejs.org/en) that often, I still have it installed.<br>It was sometimes helpful to have it .
 <br><br>
 That's it :wink:	
 <br><br>
