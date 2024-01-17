@@ -20,3 +20,5 @@ Here you will find a list of the existing examples and a short explanation.
 :pushpin: [**Floating Dot**](https://github.com/praetoriani/Web-Components/tree/main/Examples/floating-dot) <br>
 This example shows a simple blue circle in the bottom right corner of the page. The circle has a hover effect and is clickable.
 
+:pushpin: [**Info Banner**](https://github.com/praetoriani/Web-Components/tree/main/Examples/info-banner) <br>
+This example shows a banner with its own properties that can be changed to modify the banners position or color. And you can display some text on it.
