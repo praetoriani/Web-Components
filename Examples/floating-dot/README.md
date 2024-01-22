@@ -8,13 +8,17 @@
 
 This is a sample of a simple Web Component that shows a blue <i>floating dot</i> on your page.
 
+<br>
 
-**floating-dot.js**<br>
-This file contains all the Javascript code that is necessary to define our component, assign a stylesheet to it and also give our component functionality.
+The *Floating Dot* has three files:
+- <code>floating-dot.html</code><br>
+  Basically, this is just an HTML template that shows how to correctly integrate the component in order to use it.
+- <code>floating-dot.css</code><br>
+  This is our external stylesheet, which is injected into our component via the asynchronous Javascript function <code>loadStyles()</code>
+- <code>floating-dot.js</code><br>
+  This file contains all the Javascript code that is necessary to define our component, assign a stylesheet to it and also give our component functionality.
 
-**floating-dot.css**<br>
-This is our external stylesheet, which is injected into our component via the asynchronous Javascript function <code>loadStyles()</code>
 
+<br>
 
-**floating-dot.html**<br>
-Basically, this is just an HTML template that shows how to correctly integrate the component in order to use it.
+Just look at the code, download the example and play around with it.
