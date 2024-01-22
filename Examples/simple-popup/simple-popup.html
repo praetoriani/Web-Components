@@ -1,0 +1,46 @@
+<!--
+written by praetoriani
+https://github.com/praetoriani/Web-Components
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Popup</title>
+  <script src="simple-popup.js"></script>
+  <style type="text/css">
+    .PageLayout {
+      background-color: #DFDFDF;
+      margin: 0px;
+      padding: 0px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 18px;
+      color: #000000;
+    }
+    .ButtonClass {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 40px;
+      border: 2px dotted #303030CC;
+      border-radius: 8px;
+      background-color: #9B9B9B;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="PageLayout">
+  <button id="showPopupButton" class="ButtonClass">Show Popup</button>
+  <simple-popup
+     display="hide"
+     size="320x200"
+     title="Hello, World!"
+     message="This is our Popup Component.<br>It can display multiple lines of text.<br>And the <i>Text</i> can be <code>styled</code> <u>as well</u>."
+     button="Cool"
+  ></simple-popup>
+</body>
+</html>

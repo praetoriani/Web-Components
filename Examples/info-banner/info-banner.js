@@ -1,3 +1,9 @@
+/*
+written by praetoriani
+https://github.com/praetoriani/Web-Components
+*/
+
+
 // Define a class for our component
 class InfoBanner extends HTMLElement {
     // The constructor is called when an instance of the element is created or upgraded

@@ -22,3 +22,6 @@ This example shows a simple blue circle in the bottom right corner of the page. 
 
 :pushpin: [**Info Banner**](https://github.com/praetoriani/Web-Components/tree/main/Examples/info-banner) <br>
 This example shows a banner with its own properties that can be changed to modify the banners position or color. And you can display some text on it.
+
+:pushpin: [**Simple Popup**](https://github.com/praetoriani/Web-Components/tree/main/Examples/simple-popup) <br>
+This is an example of a popup component with its own properties that can be changed to modify the popup.
