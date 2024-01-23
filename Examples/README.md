@@ -18,13 +18,17 @@ Here you will find a list of the existing examples and a short explanation.
 ### Examples Overview
 
 :pushpin: [**Floating Dot**](https://github.com/praetoriani/Web-Components/tree/main/Examples/floating-dot) <br>
-This example shows a simple blue circle in the bottom right corner of the page. The circle has a hover effect and is clickable.
-
+This example shows a simple blue circle in the bottom right corner of the page. The circle has a hover effect and is clickable.<br>
+Download ZIP: [:floppy_disk:](https://github.com/praetoriani/Web-Components/raw/main/Examples/floating-dot/floating-dot.zip)<br>
+<br><br>
 :pushpin: [**Info Banner**](https://github.com/praetoriani/Web-Components/tree/main/Examples/info-banner) <br>
-This example shows a banner with its own properties that can be changed to modify the banners position or color. And you can display some text on it.
-
+This example shows a banner with its own properties that can be changed to modify the banners position or color. And you can display some text on it.<br>
+Download ZIP: [:floppy_disk:](https://github.com/praetoriani/Web-Components/raw/main/Examples/info-banner/info-banner.zip)<br>
+<br><br>
 :pushpin: [**Simple Popup**](https://github.com/praetoriani/Web-Components/tree/main/Examples/simple-popup) <br>
-This is an example of a popup component with its own properties that can be changed to modify the popup.
-
+This is an example of a popup component with its own properties that can be changed to modify the popup.<br>
+Download ZIP: [:floppy_disk:](https://github.com/praetoriani/Web-Components/raw/main/Examples/simple-popup/simple-popup.zip)<br>
+<br><br>
 :pushpin: [**Badge Widget**](https://github.com/praetoriani/Web-Components/tree/main/Examples/badge-widget) <br>
-In this example we create our own shields/badges (similar like those from [shields.io](https://shields.io/))
+In this example we create our own shields/badges (similar like those from [shields.io](https://shields.io/))<br>
+Download ZIP: [:floppy_disk:](https://github.com/praetoriani/Web-Components/raw/main/Examples/badge-widget/badge-widget.zip)<br>
