@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(
-        116deg,#3377ff 2%,#1a66ff 5%,#0000b3 16%,#000080 54%,#00004d 90%,#660066 100%);
+    background: linear-gradient(116deg,#3377ff 2%,#1a66ff 5%,#0000b3 16%,#000080 54%,#00004d 90%,#660066 100%);
 }
 
 .fontRoboto {
