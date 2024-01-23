@@ -1,0 +1,84 @@
+/*
+written by praetoriani
+https://github.com/praetoriani/Web-Components
+*/
+
+/* Let's import some Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.gFontw400 {
+    font-family: "Sarabun", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.gFontw700 {
+    font-family: "Sarabun", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+}
+  
+
+.SVGiconClass {
+    /* SET THE COLOR FOR THE SVG */
+    fill: #f3f3f3;
+    /* 20% TRANSPARENCY */
+    opacity: 0.80;
+    width: 12px;
+    display:table-cell;
+}
+
+
+.SVGBatchBox {
+    position: relative;
+    display: inline-block;
+    width: min-content;
+    height: min-content;
+    border: 1.5px solid rgba(51, 51, 51, 0.8);
+    border-radius: 4px;
+    background-color: #636363;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, #dfdfdf99, #efefefcc, transparent);
+    cursor: default;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.BatchBoxTable {
+    width: min-content;
+    height: min-content;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.TabCellIcon {
+    display:table-cell;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+}
+
+.TabCellText {
+    width: min-content;
+    height: min-content;
+    text-align: left;
+    vertical-align: middle;
+    text-wrap: nowrap;
+    color: #000000;
+    padding-left: 4px;
+}
+
+.TabCellInfo {
+    width: min-content;
+    height: min-content;
+    text-align: left;
+    vertical-align: middle;
+    text-wrap: nowrap;
+    color: #000000;
+}

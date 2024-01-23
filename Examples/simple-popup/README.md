@@ -56,4 +56,8 @@ The *Simple Popup Example* has three files:
 
 <br>
 
+Here is a preview of the example:
+
+![Preview](../../assets/preview-simple-popup.png)
+
 Just look at the code, download the example and play around with it.

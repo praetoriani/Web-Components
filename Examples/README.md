@@ -25,3 +25,6 @@ This example shows a banner with its own properties that can be changed to modif
 
 :pushpin: [**Simple Popup**](https://github.com/praetoriani/Web-Components/tree/main/Examples/simple-popup) <br>
 This is an example of a popup component with its own properties that can be changed to modify the popup.
+
+:pushpin: [**Badge Widget**](https://github.com/praetoriani/Web-Components/tree/main/Examples/badge-widget) <br>
+In this example we create our own shields/badges (similar like those from [shields.io](https://shields.io/))

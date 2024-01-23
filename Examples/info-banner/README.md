@@ -12,7 +12,11 @@ In the end, we will have a component that looks something like the following cod
 <br><br>
 
 ```html
-<info-banner color="#BFBFBF" position="top" message="Hello, Web Components!"></info-banner>
+<info-banner
+  color="#BFBFBF"
+  position="top"
+  message="Hello, Web Components!"
+></info-banner>
 ```
 <br>
 As you can see, this component has three properties:
@@ -42,5 +46,9 @@ The *Info Banner Example* has three files:
   Includes the whole Javascript-Code
 
 <br>
+
+Here is a preview of the example:
+
+![Preview](../../assets/preview-info-banner.png)
 
 Just look at the code, download the example and play around with it.
