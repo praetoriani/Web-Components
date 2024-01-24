@@ -1,2 +1,5 @@
 # vs code workspace
 Web-Components.code-workspace
+
+# EXCLUDE SOME FOLDERS
+/docs
