@@ -1,4 +1,5 @@
-# Web Components
+![Web Components](https://github.com/praetoriani/Web-Components/blob/a8e4e399b6990116b156149645cfad67995ae4df/assets/Web-Components-Profile-Image.png)
+
 
 ![Static Badge](https://img.shields.io/badge/Uses%20HTML5-%23525252?style=plastic&logo=html5&logoColor=%2333bbff&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
 ![Static Badge](https://img.shields.io/badge/Uses%20CSS3-%23525252?style=plastic&logo=css3&logoColor=%2333CC33&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
