@@ -26,7 +26,7 @@ return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
 function Redirect() {
-    location.replace(URLstring+'/landingpage.html');
+    location.replace('https://praetoriani.github.io/web-components/landingpage.html');
 }
 
 /* prevent right click menu */
