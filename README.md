@@ -30,10 +30,10 @@ This applies to the following browsers:<br>
 At the moment the website does not yet fully support Firefox. The website works almost entirely with Fireforx. However, there are a few small issues with the CSS definitions I used for my website. This means that in some places the website doesn't look or behave quite the same as it does on Chrome/Edge. So far I haven't gotten around to customizing the site to be fully supported by Firefox.
 <br><br>
 You can find the website here:<br>
-https://praetoriani.github.io/Web-Components/
+https://praetoriani.github.io/web-components/
 <br>
 I don't want to say too much in advance... but the website starts with an intro animation.<br><br>If you would prefer to go directly to the homepage of the website, simply use the following link:<br>
-https://praetoriani.github.io/Web-Components/landingpage.html
+https://praetoriani.github.io/web-components/landingpage.html
 <br><br>
 
 ## A guide to this repo
