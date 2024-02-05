@@ -1,6 +1,13 @@
-# vs code workspace
-Web-Components.code-workspace
+# EXCULDE VSCODE WORKSPACE AND AFFINITY PHOTO FILES
+*.code-workspace
+*.afphoto
 
-# EXCLUDE SOME FOLDERS
-/docs
+# EXCLUDE BACKUPS/LOGS FOLDER
+**/backup/
+**/backups/
+**/logs/
+
+# EXCLUDE SPECIFIC FILES/FOLDERS
+/docs/conten/
+/assets/check-error-icons.afphoto
 /assets/Web-Components-Profile-Image.afphoto

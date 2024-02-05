@@ -1,4 +1,4 @@
-![Web Components](https://github.com/praetoriani/Web-Components/blob/a8e4e399b6990116b156149645cfad67995ae4df/assets/Web-Components-Profile-Image.png)
+![Web Components](./assets/Web-Components-Profile-Image.png)
 
 
 ![Static Badge](https://img.shields.io/badge/Uses%20HTML5-%23525252?style=plastic&logo=html5&logoColor=%2333bbff&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
@@ -6,76 +6,76 @@
 ![Static Badge](https://img.shields.io/badge/Uses%20Javascript-%23525252?style=plastic&logo=javascript&logoColor=%23ffd633&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
 
 
-### Welcome to my <strong>Web Component Repository</strong>.
+## Welcome to my Web Component Repo
 
-With this repository I would like to show how easy it is to create your own web components using HTML, Javascript and CSS.
+I'm pleased that you found your way here to this repository.<br>I've been working a lot on this private project lately and made some changes to this repository as well.
 <br><br>
-
-### At the beginning a short introduction
-
-In my opinion, we use complex frameworks like Angular, React or Vue far too often to develop web applications. But the truth is that in many cases we probably don't need it at all. Today's modern browsers come with a whole range of technologies that enable us to create our own web components using simple HTML, Javascript and CSS.
+This repository now has its own website (here on Github). I created this website to provide information about web components as well as to show examples of what is possible with web components. There is also a tutorial in which I explain how to create a simple web component.
 <br><br>
-Now some people will probably ask themselves: <i>Why should I create my own web components?</i> or <i>What advantages do I have from this?</i> Basically, the advantages are actually obvious. Every time we use third-party technologies (such as frameworks etc), we make ourselves or our project dependent on these technologies.
+**Some informations, before you visit the website:**
+![Website Requirements](./assets/website-requirements.png)
 <br><br>
-It has now been over 20 years since I completed my professional training as a web developer. Back then, websites consisted of HTML, CSS and Javascript files. Since not only the Bowser, but also technologies such as HTML, CSS and Javascript have developed further over the 20 years, we now have completely different options.
+I optimized my website for Google Chome and Microsoft Edge (these browsers have the largest market share).<br>
+I tested the website with the following browsers:
 <br><br>
-Today we are able to define our own HTML components and style them independently of other components using our own CSS scope. We can also assign events to these components using Javascript and thus give them functionality. This allows us to create reusable web components that we can quickly and easily integrate into any of our projects.
-<br><br>
-
-### What do we need to create our own Web Components?
-<!--
-Actually, I have already answered this question in my short introduction. All we need to create our own web components is:
-<br><br>
-:pushpin: Knowledge of HTML, CSS and Javascript.
+<strong>Chrome</strong> (Version 121.0.6167.140 ) <br>
+<strong>Edge</strong> (Version 121.0.2277.98) <br>
+<strong>Opera One</strong> (Version 106.0.4998.70) <br>
+<strong>Firefox</strong> (Version 122.0) <br>
 <br>
-:pushpin: A modern web browser (e.g. Chrome)
+The website works perfectly on all chromium-based browsers (with Blink Browser Engine).<br>
+This applies to the following browsers:<br>
+<strong>Chrome</strong> , <strong>Edge</strong> , <strong>Opera</strong> , <strong>Vivaldi</strong> , <strong>Brave</strong> , <strong>Bomite</strong>
+<br><br>
+At the moment the website does not yet fully support Firefox. The website works almost entirely with Fireforx. However, there are a few small issues with the CSS definitions I used for my website. This means that in some places the website doesn't look or behave quite the same as it does on Chrome/Edge. So far I haven't gotten around to customizing the site to be fully supported by Firefox.
+<br><br>
+You can find the website here:<br>
+https://praetoriani.github.io/Web-Components/
 <br>
-:pushpin: A code editor (I use VS Code)
-<br>
-:pushpin: A local web server (I use the Node module http-server)
--->
-Here are my recommendations for the basic requirements and also information about the tools I use to create the web components.
+I don't want to say too much in advance... but the website starts with an intro animation.<br><br>If you would prefer to go directly to the homepage of the website, simply use the following link:<br>
+https://praetoriani.github.io/Web-Components/landingpage.html
 <br><br>
 
-![Static Badge](https://img.shields.io/badge/Requires%20HTML%20Skills-%23525252?style=plastic&logo=html5&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
-<br>You should have at least a basic knowledge of HTML.
-<br><br>
-![Static Badge](https://img.shields.io/badge/Requires%20CSS%20Skills-%23525252?style=plastic&logo=css3&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
-<br>Just like with HTML, you should also be familiar with CSS
-<br><br>
-![Static Badge](https://img.shields.io/badge/Requires%20JavaScript%20Skills-%23525252?style=plastic&logo=javascript&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
-<br>It is helpful if you know what classes and event handlers are<br>in JavaScript and if you know what DOM means.
-<br><br>
-![Static Badge](https://img.shields.io/badge/Recommended%3A%20VS%20Code-%23525252?style=plastic&logo=visualstudiocode&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
-<br>I've been using [ **VS Code** ](https://code.visualstudio.com/) to edit my source code for many years.<br>But of course any editor works.
-<br><br>
-![Static Badge](https://img.shields.io/badge/Recommended%3A%20Chrome%20Browser-%23525252?style=plastic&logo=googlechrome&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
-<br>I've also been using Google's Chrome browser for some time.<br>I mention this primarily for compatibility reasons
-<br><br>
-![Static Badge](https://img.shields.io/badge/Recommended%3A%20http%20server-%23525252?style=plastic&logo=npm&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
-![Static Badge](https://img.shields.io/badge/Recommended%3A%20ngrok-%23525252?style=plastic&logo=ngrok&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
-<br>To test my web components I mainly use the [ **http-server** ](https://www.npmjs.com/package/http-server) (npm module).<br>But this also requires NodeJS. An alternative would be [ **ngrok** ](https://ngrok.com/), for example
-<br><br>
-![Static Badge](https://img.shields.io/badge/Recommended%3A%20NodeJS-%23525252?style=plastic&logo=nodedotjs&logoColor=%23DFDFDF&label=%20&labelColor=%23525252&link=https%3A%2F%2Fgithub.com%2Fpraetoriani)
-<br>Even though I may not use [ **NodeJS** ](https://nodejs.org/en) that often, I still have it installed.<br>It was sometimes helpful to have it .
-<br><br>
-That's it :wink:	
-<br><br>
-> [!IMPORTANT]
-> NodeJS is not required to create web components.
+## A guide to this repo
 
+Let me give you a short guide on how this repo is structured and how I organzied everything:
+
+<img src="./assets/directory.svg" width="16px"> **assets**<br>
+Here are just various images that I use in the readme pages.
+<br><br>
+<img src="./assets/directory.svg" width="16px"> **development**<br>
+This folder contains all the web components that I have designed so far. So for each web component there is a separate subfolder with the complete source code (including application example). Each web component comes with its own readme (I recommend reading this one). All web components in this folder are not officially released and should therefore only be used for testing and development processes.
+<br><br>
+<img src="./assets/directory.svg" width="16px"> **docs**<br>
+This directory is exclusively for the repository website.<br>All important and relevant data for the website is stored here.
+<br><br>
+<img src="./assets/directory.svg" width="16px"> **releases**<br>
+Here you can find the officially released web components. There is a <code>README.MD</code> inside the <b>releases</b> folder ,which contains informations about the current (latest) releases. Each web component has its own subfolder inside the <b>releases</b> folder, which contain all published versions of the web components (as a ZIP archive). The structure will look like this:
+<br><br>
+<img src="./assets/directory.svg" width="16px"> releases<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./assets/directory.svg" width="16px"> demo-component<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;demo-component-v1.00.01.zip<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;demo-component-v1.00.02.zip<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./assets/directory.svg" width="16px"> sample-component<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sample-component-v1.00.01.zip<br>
 <br>
 
-### What's next?
-
-As I said at the beginning, this repo is still under construction. There is currently only one example. But there will gradually be more.
+## Important information about the releases
+First of all: This whole repo is a private project in which I have invested a lot of time (especially recently). I developed every single web component in my free time and make them available here (under the MIT license).
 <br><br>
-Examples of Web Components are located in the [ **Examples** ](https://github.com/praetoriani/Web-Components/tree/main/Examples) folder. Both the *Examples* folder and each example have a <code>README.md</code> which contains more detailed information.
+When developing the web components, I did my best to offer the most flexible and error-free solution possible. But unfortunately I cannot guarantee that all of my code will work without errors on all browsers and under all circumstances. Therefore, I try to cover the largest market share. And this is on chromium-based browsers.
 <br><br>
-Feel free to download and play with the code example
+My web components consist of HTML, CSS and Javascript. The code is optimized for all chromium-based browsers that use the Blink Browser Engine. This applies to the current versions of the following browsers:<br>
+<strong>Chrome</strong> , <strong>Edge</strong> , <strong>Opera</strong> , <strong>Vivaldi</strong> , <strong>Brave</strong> , <strong>Bomite</strong>
+<br><br>
+Before I deploy and publish my components, I test them at least with Google Chrome and Microsoft Edge. Unfortunately, due to lack of time, I haven't gotten around to supporting other browsers (browser engines) yet. But I'm working on ensuring that every web component runs on as many browsers as possible. The plan is to create an overview showing which web component supports which browser. There is no complete overview yet, but you can find some informations about compatibility in the <code>README.md</code> in the release folder.
+<br><br>
+If you want to use my web components, you should remember that I have only developed, tested and released them for chromium-based browser engines.
+<br><br>
+You can find more informations about the releases and their compatibility in the <code>README.md</code> in the releases folder
+<br><br>
 
-> [!NOTE]
-> This repo is still under construction.
-> More content is coming soon ...
-
-
+## Why isn't Apple/Safari mentioned?
+I work with Windows. Apple stopped supporting Safari on Windows back in 2012. The latest version available is Safari 5.1.7. So pretty outdated. Unfortunately, I haven't yet found a satisfying solution to test the website/components for compatibility with Apple/Safari (and the Webkit browser engine). So all I can currently say is that the website/components probably almost certainly work with Safari. But I cannot guarantee that everything will behave as it should.
+<br><br>
+There is also a requirement from Apple that all browsers under iOS must also use the Webkit browser engine. This means that both, my website and the web components I developed may produce completely different results under iOS with Chrome/Edge/Firefox than it would be the case under Windows.
