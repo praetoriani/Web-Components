@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Pages (praetoriani)</title>
     <script src="../site.js"></script>
-    <script src="tooltip-popup.js"></script>
+    <script src="simple-popup.js"></script>
     <script src="web-components.js"></script>
-    <link rel="stylesheet" href="tooltip-popup.css">
+    <link rel="stylesheet" href="simple-popup.css">
     <link rel="stylesheet" href="web-components.css">
     <style type="text/css">
         /* Import Roboto from fonts.google.com */
@@ -60,11 +60,11 @@
                     <img src="../web-components-logo.svg" width="44" height="44" alt="web-components-logo">
                 </td>
                 <td class="HeadTabTextCell">
-                    Web Components > Examples > Tooltip Popup
+                    Web Components > Examples > Simple Popup
                 </td>
                 <td class="HeadTabSpacer">&nbsp;</td>
                 <td class="HeadTabSVGCell" title="Examples">
-                    <svg class="DemocodeSVG" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onclick="(function() { LoadContentPage('web-components/examples.html') })();">
+                    <svg class="DemocodeSVG" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onclick="(function() { LoadContentPage('web-components/demo/examples.html') })();">
                         <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H12H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M10 12L8 14L10 16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -91,26 +91,25 @@
     </div>
     <div id="CurtainPosL" class="CurtainPosL"></div>
     <div id="CurtainPosR" class="CurtainPosR"></div>
-
-    <tooltip-popup tpid="DemoTooltip" size="340x260" xaxis="calc((100% - 260px) / 2)" yaxis="calc((100% - 340px) / 2)" zaxis="500" viewmode="visible">
-        <span slot="tooltipheadtext" class="GoFoRoboto700">
-            <strong>Tooltip Popup (Web Component)</strong>
-        </span>
-        <span slot="tooltipbodytext" class="GoFoRoboto400">
-            This is a damn cool tooltip popup as a standalone web component. You can set a title and boby text with your own css styles.<br><br>
-            You can <i>write a lot of text</i> inside this tooltip. And you can use <strong>bold font as well</strong>.<br><br>
-            Just download the demo and have a look at the <code>sourcecode ;)</code>
-        </span>
-    </tooltip-popup>
-
     <div id="WebComponentPreview" class="WebComponentPreview RobotoNormal400">
         <table class="WebComponentPreviewTable" cellspacing="0" cellpadding="0">
             <tr>
                 <td class="WebComponentPreviewTCellContent">
+                    <simple-popup popupid="MyPopup" size="320x240" viewmode="hidden">
+                        <span slot="popupheadtext" class="GoFoRoboto400"><strong>Hello, Web Components!</strong></span>
+                        <span slot="popupbodytext" class="GoFoRoboto400">
+                            <u><strong>This</strong> is our Popup Web Component.</u><br><br>
+                            It can display multiple lines of text.<br>
+                            And the <i>Text</i> can be styled <u>as well</u>.<br><br>
+                            <code>Download the demo and play with it :)</code>
+                        </span>
+                        <span slot="popupbuttontext" class="GoFoRoboto700">Cool</span>
+                    </simple-popup>
+                    <div class="Button GoFoRoboto400" onclick="document.querySelector('simple-popup').UpdateViewMode('MyPopup','visible');">Show Popup</div>
                 </td>
             </tr>
             <tr>
-                <td class="WebComponentPreviewTCellOptions RobotoNormal400" onclick="LoadContentPage('web-components/downloads/tooltip-popup-demo.zip');">Download it</td>
+                <td class="WebComponentPreviewTCellOptions RobotoNormal400" onclick="LoadContentPage('web-components/downloads/simple-popup-demo.zip');">Download it</td>
             </tr>
         </table>
     </div>

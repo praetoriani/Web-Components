@@ -6,22 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Pages (praetoriani)</title>
     <script src="../site.js"></script>
-    <script src="badge-widget.js"></script>
+    <script src="tooltip-popup.js"></script>
     <script src="web-components.js"></script>
-    <link rel="stylesheet" href="badge-widget.css">
+    <link rel="stylesheet" href="tooltip-popup.css">
     <link rel="stylesheet" href="web-components.css">
     <style type="text/css">
         /* Import Roboto from fonts.google.com */
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    
+
         .GoFoRoboto400 {
-          font-family: "Roboto", sans-serif;
-          font-weight: 400;
-          font-style: normal;
-          font-size: 12px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
         }
-        .FontBlack { color: #000000; }
-        .FontWhite { color: #FFFFFF; }
+
+        .GoFoRoboto700 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 14px;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #BEBEBE;
+            overflow: hidden;
+            cursor: default;
+        }
+        .Button {
+            width: 120px;
+            height: 34px;
+            background-color: #DDDDDD;
+            color: #303030;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
       </style>
     </head>
 <body>
@@ -32,11 +60,11 @@
                     <img src="../web-components-logo.svg" width="44" height="44" alt="web-components-logo">
                 </td>
                 <td class="HeadTabTextCell">
-                    Web Components > Examples > Badge Widget
+                    Web Components > Examples > Tooltip Popup
                 </td>
                 <td class="HeadTabSpacer">&nbsp;</td>
                 <td class="HeadTabSVGCell" title="Examples">
-                    <svg class="DemocodeSVG" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onclick="(function() { LoadContentPage('web-components/examples.html') })();">
+                    <svg class="DemocodeSVG" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onclick="(function() { LoadContentPage('web-components/demo/examples.html') })();">
                         <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H12H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M10 12L8 14L10 16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -64,62 +92,28 @@
     <div id="CurtainPosL" class="CurtainPosL"></div>
     <div id="CurtainPosR" class="CurtainPosR"></div>
 
+    <tooltip-popup tpid="DemoTooltip" size="340x260" xaxis="calc((100% - 260px) / 2)" yaxis="calc((100% - 340px) / 2)" zaxis="500" viewmode="visible">
+        <span slot="tooltipheadtext" class="GoFoRoboto700">
+            <strong>Tooltip Popup (Web Component)</strong>
+        </span>
+        <span slot="tooltipbodytext" class="GoFoRoboto400">
+            This is a damn cool tooltip popup as a standalone web component. You can set a title and boby text with your own css styles.<br><br>
+            You can <i>write a lot of text</i> inside this tooltip. And you can use <strong>bold font as well</strong>.<br><br>
+            Just download the demo and have a look at the <code>sourcecode ;)</code>
+        </span>
+    </tooltip-popup>
+
     <div id="WebComponentPreview" class="WebComponentPreview RobotoNormal400">
         <table class="WebComponentPreviewTable" cellspacing="0" cellpadding="0">
             <tr>
                 <td class="WebComponentPreviewTCellContent">
-                
-                    <table class="DemoPageTable">
-                        <tr>
-                            <td>
-                                Here you can see the Badge-Widget Web Component.<br>
-                                All four Badge-Widgets are using the same web component.<br>
-                                (only with differrent configurations)<br><br>
-                                Feel free to download the demo code.<br><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <badge-widget iconname="github" iconcolor="#303030" shadow="true" glossy="true">
-                                    <span slot="badgename" class="GoFoRoboto400 FontBlack"><strong>Github.com/</strong></span>
-                                    <span slot="badgetext" class="GoFoRoboto400 FontBlack">praetoriani</span>
-                                </badge-widget>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <badge-widget iconname="html" iconcolor="#dd7a08" shadow="false" glossy="false">
-                                    <span slot="badgename" class="GoFoRoboto400 FontWhite"><strong>HTML</strong>&nbsp;</span>
-                                    <span slot="badgetext" class="GoFoRoboto400 FontWhite">Website</span>
-                                </badge-widget>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <badge-widget iconname="css" iconcolor="#45e037" shadow="true" glossy="false">
-                                    <span slot="badgename" class="GoFoRoboto400 FontWhite"><strong>CSS3</strong>&nbsp;</span>
-                                    <span slot="badgetext" class="GoFoRoboto400 FontWhite">Stylesheets</span>
-                                </badge-widget>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <badge-widget iconname="jscript" iconcolor="#f0c400" shadow="false" glossy="true">
-                                    <span slot="badgename" class="GoFoRoboto400 FontBlack"><strong>Javascript</strong>&nbsp;&nbsp;</span>
-                                    <span slot="badgetext" class="GoFoRoboto400 FontBlack">(ECMAScript)</span>
-                                </badge-widget>
-                            </td>
-                        </tr>
-                    </table>
-                
                 </td>
             </tr>
             <tr>
-                <td class="WebComponentPreviewTCellOptions RobotoNormal400" onclick="LoadContentPage('web-components/downloads/badge-widget-demo.zip');">Download it</td>
+                <td class="WebComponentPreviewTCellOptions RobotoNormal400" onclick="LoadContentPage('web-components/downloads/tooltip-popup-demo.zip');">Download it</td>
             </tr>
         </table>
     </div>
-
     <div id="SiteFooterGlassFX" class="SiteFooterGlassFX"></div>
     <div id="SiteFooter" class="SiteFooter Roboto200 noto-color"><strong>Made with HTML <e-moji>&#x1F9E9;</e-moji> , CSS <e-moji>&#x1f58c;</e-moji> and Javascript <e-moji>&#x1f9f0;</e-moji></strong></div>
 </body>
