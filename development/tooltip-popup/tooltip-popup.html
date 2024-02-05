@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Component: simple-popup</title>
+    <script src="tooltip-popup.js"></script>
+    <style>
+        /*---------------------------------------------------------------------------
+        THIS CSS-CODE IS NOT PART OF THE WEB COMPONENT. IT'S ONLY FOR THIS HTML-PAGE
+        ---------------------------------------------------------------------------*/
+
+        /* Import Roboto from fonts.google.com */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .GoFoRoboto400 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+        }
+
+        .GoFoRoboto700 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 14px;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #BEBEBE;
+            overflow: hidden;
+            cursor: default;
+        }
+        .Button {
+            width: 120px;
+            height: 34px;
+            background-color: #DDDDDD;
+            color: #303030;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- SET THE HEIGHT TO 80 AND LEAVE THE 'tooltipbodytext' SLOT EMPTY IF YOU WANT TO USE THE SINGLE LINE TOOLTIP -->
+    <tooltip-popup tpid="DemoSmallToolTip" size="280x80" xaxis="calc((100% - 280px) / 2)" yaxis="100px" zaxis="500" viewmode="visible">
+        <span slot="tooltipheadtext" class="GoFoRoboto400" onclick="ClickTest();">
+            This is a special tooltip with only one line
+        </span>
+        <span slot="tooltipbodytext"></span>
+    </tooltip-popup>
+    <tooltip-popup tpid="DemoFullToolTip" size="340x300" xaxis="calc((100% - 340px) / 2)" yaxis="200px" zaxis="250" viewmode="visible">
+        <span slot="tooltipheadtext" class="GoFoRoboto700" onclick="ClickTest();">
+            <strong>Tooltip-Popup Web Component</strong>
+        </span>
+        <span slot="tooltipbodytext" class="GoFoRoboto400">
+            This is the Tooltip-Popup in action.<br>Almost fully configurable.<br><br>
+            The web component offers two slots for your text/code. You can assign your own css-classes to these slots as well.
+            <br><br>
+            Just have a look at the tooltip-popup.js file
+        </span>
+    </tooltip-popup>
+    <script>
+        function ClickTest() {
+            if( document.querySelector('tooltip-popup').shadowRoot.getElementById('DemoFullToolTip') ) {
+                console.info("HTML Element 'DemoFullToolTip' found inside shadowRoot");
+            }
+        }
+    </script>
+</body>
+</html>

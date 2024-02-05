@@ -1,0 +1,136 @@
+<!-- (c) 2024 by praetoriani (https://github.com/praetoriani) -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Pages (praetoriani)</title>
+    <script src="site.js"></script>
+    <script src="hello.js"></script>
+    <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <div id="HeaderBox" class="HeaderBox Roboto700">
+        <table class="HeaderTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="HeadTabLogoCell">
+                    <img src="content/web-components-logo.svg" width="44" height="44" alt="web-components-logo">
+                </td>
+                <td class="HeadTabTextCell">
+                    Web Components > Hello, Web Components
+                </td>
+                <td class="HeadTabSpacer">&nbsp;</td>
+                <td class="HeadTabSVGCell" title="Info/About">
+                    <svg class="InformationSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="(function() { LoadContentPage('info.html') })();">
+                        <path d="M19,7.78c0.06,2.04-0.74,3.89-2.08,5.2C15.73,14.15,15,16.33,15,17H9c0-0.63-0.67-2.82-1.85-3.95C5.82,11.78,5,9.99,5,8 c0-3.92,3-7,7.16-7C16,1,18.89,4.13,19,7.78z M9,20c0,1.66,1.34,3,3,3s3-1.34,3-3v-1H9V20z"/>
+                    </svg>
+                </td>
+                <td class="HeadTabSVGCell" title="Home">
+                    <svg class="NavHomeSVG" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" onclick="(function() { LoadContentPage('landingpage.html') })();">
+                        <path d="M27.3,13.9L23,10.2V6c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v0.9l-3.3-2.8c-0.4-0.3-1-0.3-1.4,0L2.7,13.9  C2.2,14.3,2.5,15,3.1,15H5v11c0,0.6,0.4,1,1,1h6v-6c0-1.7,1.3-3,3-3s3,1.3,3,3v6h6c0.6,0,1-0.4,1-1V15h1.9  C27.5,15,27.8,14.3,27.3,13.9z"/>
+                    </svg>
+                </td>
+                <td class="HeadTabSVGCell" title="https://github.com/praetoriani">
+                    <svg class="GitHubSVG" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onclick="(function() { window.open('https://github.com/praetoriani', '_blank',); })();">
+                        <path d="M20.9992 5.95846C21.0087 6.565 20.9333 7.32649 20.8658 7.8807C20.8395 8.09686 20.8037 8.27676 20.7653 8.42453C21.6227 10.01 22 11.9174 22 14C22 16.4684 20.8127 18.501 18.9638 19.8871C17.1319 21.2605 14.6606 22 12 22C9.33939 22 6.86809 21.2605 5.0362 19.8871C3.18727 18.501 2 16.4684 2 14C2 11.9174 2.37732 10.01 3.23472 8.42452C3.19631 8.27676 3.16055 8.09685 3.13422 7.8807C3.06673 7.32649 2.99133 6.565 3.00081 5.95846C3.01149 5.27506 3.10082 4.5917 3.19988 3.91379C3.24569 3.60028 3.31843 3.30547 3.65883 3.11917C4.00655 2.92886 4.37274 2.99981 4.73398 3.1021C5.95247 3.44713 7.09487 3.93108 8.16803 4.51287C9.2995 4.17287 10.5783 4 12 4C13.4217 4 14.7005 4.17287 15.832 4.51287C16.9051 3.93108 18.0475 3.44713 19.266 3.1021C19.6273 2.99981 19.9935 2.92886 20.3412 3.11917C20.6816 3.30547 20.7543 3.60028 20.8001 3.91379C20.8992 4.5917 20.9885 5.27506 20.9992 5.95846ZM20 14C20 12.3128 19.6122 10 17.5 10C16.5478 10 15.6474 10.2502 14.7474 10.5004C13.8482 10.7502 12.9495 11 12 11C11.0505 11 10.1518 10.7502 9.25263 10.5004C8.35261 10.2502 7.45216 10 6.5 10C4.39379 10 4 12.3197 4 14C4 15.7636 4.82745 17.231 6.23588 18.2869C7.66135 19.3556 9.69005 20 12 20C14.3099 20 16.3386 19.3555 17.7641 18.2869C19.1726 17.231 20 15.7636 20 14ZM10 14.5C10 15.8807 9.32843 17 8.5 17C7.67157 17 7 15.8807 7 14.5C7 13.1193 7.67157 12 8.5 12C9.32843 12 10 13.1193 10 14.5ZM15.5 17C16.3284 17 17 15.8807 17 14.5C17 13.1193 16.3284 12 15.5 12C14.6716 12 14 13.1193 14 14.5C14 15.8807 14.6716 17 15.5 17Z"/>
+                    </svg>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ContentBox" class="ContentBoxZoom">
+        <table class="ContentBoxTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="ContentBoxTabCellHead Roboto700 noto-color">Hello, Web Components <e-moji-18>&#x1f603;</e-moji-18></td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellText Roboto400">
+                    <br>
+                    So you came here because you wanted some answers to certain questions. Questions like <i>What are Web Components?</i> and <i>How can I create Web Components?</i> or <i>Why should I use Web Components?</i>. And above all the question: <i>How can this website help me?</i>
+                    <br><br>
+                    Well, I would like to take you on a little journey by telling you something about myself and this website. This is the best way for you to understand why this website exists and how it can help you.
+                    <br><br>
+                    But before we go into any more detail, you should know one thing:<br>
+                    <strong>This website is made for Web Developers</strong>.<br>
+                    <br>
+                    Well, of course, everyone is welcome to have a look at this website. This website is about creating your own HTML components using HTML, CSS and Javascript. And that assumes that you have some basic knowledge of HTML, CSS and Javascript. You should understand what the Document Object Model (DOM) is, what an HTML element is and how to define your own classes in Javascript.
+                    <br><br>
+                    But perhaps you are also a newcomer to the field of web development and are now inspired by this website to delve further into the subject. I can't teach you HTML, CSS and Javascript here, but I can show you what is possible with simple tricks. And in that case, I'm glad that I can inspire you.
+                    <br><br>
+                    But that's enough of an introduction. Here are the answers to a few questions.
+                    <br><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellHead Roboto700 noto-color">Why does this site exist <e-moji-18>&#x1f9d0;</e-moji-18> ?</td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellText Roboto400">
+                    <br>
+                    I completed my professional training as a web developer over 20 years ago. Back then, web development was something different than it is today. We didn't have frameworks or modules/packages back then. Browsers were also not as technically advanced as they are today. A lot has happened in the field of web development over the years. However, I am quite skeptical about some of these developments. Why?
+                    <br><br>
+                    Every time we use external resources in one of our projects by using NodeJS modules or frameworks such as Angular, React, NextJS or Vue, we automatically make ourselves dependent on these technologies. We are dependent on them being developed further. And we now even have an abbreviation for this:<br>LTS (Long Time Support).
+                    <br><br>
+                    Call me old-fashioned, but I am of the opinion that you should always think carefully about whether, and above all on whom, you want to make yourself dependent. And personally, I always prefer to be independent if I have the opportunity to do so. But that doesn't mean that I don't like today's technologies. On the contrary. I work a lot with these technologies. But there is an alternative. And it's called Web Components.
+                    <br><br>
+                    This website and the associated Github repository are a private project of mine in which I have invested a lot of time, love and passion. And with this passion I would like to show you on this website how easy it is to create your own web components with a little HTML, CSS and some Javascript.
+                    <br><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellHead Roboto700 noto-color">Sounds good. But why Web Components <e-moji-18>&#x1f914;</e-moji-18> ?</td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellText Roboto400">
+                    <br>
+                    If you delve a little deeper into all the frameworks and take a look at the technology behind them, you will notice one thing quickly: Basically, a framework consists of a handful of web components and provides ready-made styling features including animations. And on top of that, you get various script libraries that provide you with an incredibly large collection of functions. The rest is just waving the magic wand a bit and dynamically manipulating the DOM behind the scenes.
+                    <br><br>
+                    To make all this possible, we need various modules and packages and have to enter commands in our command line. We need to look at the technology of the framework and much more. Oh yes, I almost forgot about that. Many technologies are so complex that the browser cannot understand them. So we need to “translate” our code again using interpreters. And then there is the question of code optimization. The end result is often unreadable code that looks like it was put in a blender. But as long as everything works, it doesn't matter what the code looks like. You can “recompile” the app at any time.
+                    <br><br>
+                    In my opinion, we often don't need all these technologies. Because we already have simple technologies that enable us to do many things even without complex frameworks. And this is exactly where web components come into play.
+                    <br><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellHead Roboto700 noto-color">What are Web Components <e-moji-18>&#x1f928;</e-moji-18> ?</td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellText Roboto400">
+                    <br>
+                    Essentially, web components are nothing more than independent, reusable HTML elements. We can define these web components with HTML, style them with CSS, and render them in the DOM with Javascript and assign functions to them. And once you understand how DOM manipulation works, the rest is really just native HTML, CSS and Javascript. So no more complex framework. No complicated entries on the command line. But the best part is: There is no need to compile your code at all, there are no more difficult build or deployment processes and no more interpreters are required.
+                    <br><br>
+                    Today's Browser (such as Google Chrome, Microsoft Edge, Mozilla Firefox) are modern web browsers that can interpret normal HTML, CSS and Javascript code. In general you can say that the Hypertext Markup Language (HTML) creates the structure, Cascading Style Sheets (CSS) define the look&feel of the page and the Javascript Code serves the functionalities. And all this is executed inside the Browser.
+                    <br><br>
+                    This is extremely helpful if you are a developer who creates web components. Becaue there is no need to install and run a local web server on your machine to host your files for testing. Your web browser can handle all the HTML stuff, your colorful CSS definitions and fancy animations, plus the super crazy Javascript, on its own.
+                    <br><br>
+                    Sounds great at first, right? Well, unfortunately there is a small catch. In order to become largely independent of all the frameworks and libraries as a web developer, you will need some time until you have your own collection of web components. And creating web components can be a complex process. Web components should be customizable in as many properties as possible. This not only increases the flexibility of the component itself, but also expands the possible uses. Especially when the components can be flexibly configured in layout/design. But there is also something positive about it. Once you have created two to three components, you can reuse most of your code. And then creating new components is pretty quick.
+                    <br><br>
+                    In addition, you are never really alone within a community. So if you like my project and want to support me, we can build a community. And in this community we can publish our own web components and share them with each other.
+                    <br><br>
+                    Finally, one more thing to say about this part:<br>I know there will be some skeptics who will now think, "<i>Yeah, sounds great. And in the end I'll have my own framework that no one but me understands.</i>". But this is not the case. You will learn something way better than creating your own Framework. You'll learn a development technique that will help you write highly flexible code that you can use anywhere. And to be precise: In the end, you actually only need a single Javascript file that can also inject possible CSS code. All your web components can be served with a single JavaScript file. The whole code in one file that you can deploy and use anywhere, anytime. And in the worst case, you only need to make adjustments to the javascript file to affect everything else. You no longer need to edit your HTML file or customize the CSS code. All you have to do is customize the Javascript code that will end up rendering everything for you.
+                    <br><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellHead Roboto700 noto-color">You've convinced me <e-moji-18>&#x1f929;</e-moji-18> . How to create Web Components?</td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellText Roboto400 noto-color">
+                    <br>
+                    First of all, I'm pleased that you've come this far and that I was able to arouse your interest. Obviously your interest is so great that you now want to know how you can get started right away and create your own web components. And I can understand you very well.
+                    <br><br>
+                    I have created two extra areas on this website. In one section I will explain to you in detail and step by step how you can create your own web component. And in the other area you will find a few examples of web components that I created. This area is intended to serve as inspiration and show you what is possible.
+                    <br><br>
+                    <u>Let's go to the tutorial:</u><br>
+                    <div class="ContentBoxDownloadLink" onclick="(function() { LoadContentPage('tutorial.html'); })();"><e-moji>&#x1f4cb;</e-moji> How to create Web Components<br><br></div>
+                    <u>Show me the examples:</u><br>
+                    <div class="ContentBoxDownloadLink" onclick="(function() { LoadContentPage('examples.html'); })();"><e-moji>&#x1f4cb;</e-moji> Web Components Examples<br></div>
+                    <br><br><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="SiteFooterGlassFX" class="SiteFooterGlassFX"></div>
+    <div id="SiteFooter" class="SiteFooter Roboto200 noto-color"><strong>Made with HTML <e-moji>&#x1F9E9;</e-moji> , CSS <e-moji>&#x1f58c;</e-moji> and Javascript <e-moji>&#x1f9f0;</e-moji></strong></div>
+</body>
+</html>

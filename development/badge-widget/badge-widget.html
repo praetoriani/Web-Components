@@ -1,0 +1,107 @@
+<!--
+written by praetoriani
+https://github.com/praetoriani/Web-Components
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badge Widget</title>
+  <script src="badge-widget.js"></script>
+  <style type="text/css">
+    /*---------------------------------------------------------------------------
+    THIS CSS-CODE IS NOT PART OF THE WEB COMPONENT. IT'S ONLY FOR THIS HTML-PAGE
+    ---------------------------------------------------------------------------*/
+
+    /* Import Roboto from fonts.google.com */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    .GoFoRoboto400 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 12px;
+    }
+    .FontBlack { color: #000000; }
+    .FontWhite { color: #FFFFFF; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #DFDFDF;
+      overflow: hidden;
+      cursor: default;
+    }
+    .PageTable {
+      position: absolute;
+      width: 460px;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      border-collapse: collapse;
+    }
+    .PageTable td {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      vertical-align: middle;
+      padding: 10px 0px 10px 0px;
+    }
+  </style>
+</head>
+<body class="PageLayout">
+<table class="PageTable GoFoRoboto400 FontBlack">
+  <tr>
+    <td>
+      Badge-Widget with icon, shadow- and glossy-effect (can be clicked):<br><br>
+      <badge-widget iconname="github" iconcolor="#303030" shadow="true" glossy="true" linkurl="https://github.com/praetoriani">
+        <span slot="badgename" class="GoFoRoboto400 FontBlack"><strong>Github.com/</strong></span>
+        <span slot="badgetext" class="GoFoRoboto400 FontBlack">praetoriani</span>
+      </badge-widget>
+      <br><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Badge-Widget with icon, no shadow- and no glossy-effect (can't be clicked):<br><br>
+      <badge-widget iconname="html" iconcolor="#dd7a08" shadow="false" glossy="false">
+        <span slot="badgename" class="GoFoRoboto400 FontWhite"><strong>HTML</strong>&nbsp;</span>
+        <span slot="badgetext" class="GoFoRoboto400 FontWhite">Website</span>
+      </badge-widget>
+      <br><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Badge-Widget with icon, a shadow- but no glossy-effect (can't be clicked):<br><br>
+      <badge-widget iconname="css" iconcolor="#45e037" shadow="true" glossy="false">
+        <span slot="badgename" class="GoFoRoboto400 FontWhite"><strong>CSS3</strong>&nbsp;</span>
+        <span slot="badgetext" class="GoFoRoboto400 FontWhite">Stylesheets</span>
+      </badge-widget>
+      <br><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Badge-Widget with icon, without a shadow- but a glossy-effect (can't be clicked):<br><br>
+      <badge-widget iconname="jscript" iconcolor="#f0c400" shadow="false" glossy="true">
+        <span slot="badgename" class="GoFoRoboto400 FontBlack"><strong>Javascript</strong>&nbsp;&nbsp;</span>
+        <span slot="badgetext" class="GoFoRoboto400 FontBlack">(ECMAScript&nbsp;2023)</span>
+      </badge-widget>
+      <br><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Badge-Widget without icon, but a shadow- an a glossy-effect (can't be clicked):<br><br>
+      <badge-widget iconname="" iconcolor="" shadow="true" glossy="true">
+        <span slot="badgename" class="GoFoRoboto400 FontBlack"><strong>Fancy</strong></span>
+        <span slot="badgetext" class="GoFoRoboto400 FontBlack">&nbsp;Web&nbsp;Components&nbsp;</span>
+      </badge-widget>
+      <br><br>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
