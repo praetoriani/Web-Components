@@ -27,6 +27,8 @@ The website works perfectly on all chromium-based browsers (with Blink Browser E
 This applies to the following browsers:<br>
 <strong>Chrome</strong> , <strong>Edge</strong> , <strong>Opera</strong> , <strong>Vivaldi</strong> , <strong>Brave</strong> , <strong>Bomite</strong>
 <br><br>
+<strong>Mobile Devices are currently not supported!</strong>
+<br><br>
 At the moment the website does not yet fully support Firefox. The website works almost entirely with Fireforx. However, there are a few small issues with the CSS definitions I used for my website. This means that in some places the website doesn't look or behave quite the same as it does on Chrome/Edge. So far I haven't gotten around to customizing the site to be fully supported by Firefox.
 <br><br>
 You can find the website here:<br>
