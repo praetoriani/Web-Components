@@ -1,0 +1,655 @@
+<!-- (c) 2024 by praetoriani (https://github.com/praetoriani) -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Pages (praetoriani)</title>
+    <script src="site.js"></script>
+    <script src="tutorial.js"></script>
+    <link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+    <div id="HeaderBox" class="HeaderBox Roboto700">
+        <table class="HeaderTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="HeadTabLogoCell">
+                    <img src="content/web-components-logo.svg" width="44" height="44" alt="web-components-logo">
+                </td>
+                <td class="HeadTabTextCell">
+                    Web Components > Tutorial
+                </td>
+                <td class="HeadTabSpacer">&nbsp;</td>
+                <td class="HeadTabSVGCell" title="Info/About">
+                    <svg class="InformationSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="(function() { LoadContentPage('info.html') })();">
+                        <path d="M19,7.78c0.06,2.04-0.74,3.89-2.08,5.2C15.73,14.15,15,16.33,15,17H9c0-0.63-0.67-2.82-1.85-3.95C5.82,11.78,5,9.99,5,8 c0-3.92,3-7,7.16-7C16,1,18.89,4.13,19,7.78z M9,20c0,1.66,1.34,3,3,3s3-1.34,3-3v-1H9V20z"/>
+                    </svg>
+                </td>
+                <td class="HeadTabSVGCell" title="Home">
+                    <svg class="NavHomeSVG" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"  onclick="(function() { LoadContentPage('landingpage.html') })();">
+                        <path d="M27.3,13.9L23,10.2V6c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v0.9l-3.3-2.8c-0.4-0.3-1-0.3-1.4,0L2.7,13.9  C2.2,14.3,2.5,15,3.1,15H5v11c0,0.6,0.4,1,1,1h6v-6c0-1.7,1.3-3,3-3s3,1.3,3,3v6h6c0.6,0,1-0.4,1-1V15h1.9  C27.5,15,27.8,14.3,27.3,13.9z"/>
+                    </svg>
+                </td>
+                <td class="HeadTabSVGCell" title="https://github.com/praetoriani">
+                    <svg class="GitHubSVG" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onclick="(function() { window.open('https://github.com/praetoriani', '_blank',); })();">
+                        <path d="M20.9992 5.95846C21.0087 6.565 20.9333 7.32649 20.8658 7.8807C20.8395 8.09686 20.8037 8.27676 20.7653 8.42453C21.6227 10.01 22 11.9174 22 14C22 16.4684 20.8127 18.501 18.9638 19.8871C17.1319 21.2605 14.6606 22 12 22C9.33939 22 6.86809 21.2605 5.0362 19.8871C3.18727 18.501 2 16.4684 2 14C2 11.9174 2.37732 10.01 3.23472 8.42452C3.19631 8.27676 3.16055 8.09685 3.13422 7.8807C3.06673 7.32649 2.99133 6.565 3.00081 5.95846C3.01149 5.27506 3.10082 4.5917 3.19988 3.91379C3.24569 3.60028 3.31843 3.30547 3.65883 3.11917C4.00655 2.92886 4.37274 2.99981 4.73398 3.1021C5.95247 3.44713 7.09487 3.93108 8.16803 4.51287C9.2995 4.17287 10.5783 4 12 4C13.4217 4 14.7005 4.17287 15.832 4.51287C16.9051 3.93108 18.0475 3.44713 19.266 3.1021C19.6273 2.99981 19.9935 2.92886 20.3412 3.11917C20.6816 3.30547 20.7543 3.60028 20.8001 3.91379C20.8992 4.5917 20.9885 5.27506 20.9992 5.95846ZM20 14C20 12.3128 19.6122 10 17.5 10C16.5478 10 15.6474 10.2502 14.7474 10.5004C13.8482 10.7502 12.9495 11 12 11C11.0505 11 10.1518 10.7502 9.25263 10.5004C8.35261 10.2502 7.45216 10 6.5 10C4.39379 10 4 12.3197 4 14C4 15.7636 4.82745 17.231 6.23588 18.2869C7.66135 19.3556 9.69005 20 12 20C14.3099 20 16.3386 19.3555 17.7641 18.2869C19.1726 17.231 20 15.7636 20 14ZM10 14.5C10 15.8807 9.32843 17 8.5 17C7.67157 17 7 15.8807 7 14.5C7 13.1193 7.67157 12 8.5 12C9.32843 12 10 13.1193 10 14.5ZM15.5 17C16.3284 17 17 15.8807 17 14.5C17 13.1193 16.3284 12 15.5 12C14.6716 12 14 13.1193 14 14.5C14 15.8807 14.6716 17 15.5 17Z"/>
+                    </svg>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ContentBox" class="ContentBoxZoom">
+        <table class="ContentBoxTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="ContentBoxTabCellHead Roboto700 noto-color">How to create Web Components <e-moji>&#x1f928;</e-moji>?</td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellText Roboto400">
+                    <br>
+                    Okay, so here we are. You want to know how you can develop your own reusable web components?<br>Then let's start straight away.
+                    <br><br>
+                    First of all, a small checklist of everything you need to complete this tutorial.<br>
+                    <ul>
+                    <li>Basic knowledge of HTML, CSS and Javascript</li>
+                    <li>Your favorite editor (I use VS Code)</li>
+                    </ul>
+                    To test our web component, we only need a modern browser (like Google Chrome or Microsoft Edge). Modern browsers are able to interpret pure HTML, CSS and Javascript. So there is no need for an extra tool to test our web component.
+                    <br><br>
+                    However, if you want to test your web component with a local web server, I can recommend the following options: I'm using NodeJS and the NPM module http-server. Both tools are quickly installed and easy to set up. An alternative to this would be ngrok.
+                    <ul>
+                    <li class="ContentBoxInlineURL" onclick="(function() { window.open('https://nodejs.org/en/download', '_blank',); })();">Download NodeJS</li>
+                    <li class="ContentBoxInlineURL" onclick="(function() { window.open('https://www.npmjs.com/package/http-server', '_blank',); })();">http-server (npm module)</li>
+                    <li class="ContentBoxInlineURL" onclick="(function() { window.open('https://ngrok.com/download', '_blank',); })();">Download ngrok</li>
+                    </ul>
+                    Each web component consists of three parts. An HTML part, a CSS part and a Javascript part. For the sake of simplicity, I first create an HTML file, a CSS file and a JS file for each new web component.
+                    <br><br>
+                    In the end, the HTML file is only used to test our web component. Because the actual web component is dynamically generated by Javascript (but more on that later). In the CSS file we will write the code that is responsible for styling our web component.
+                    <br><br>
+                    Everything clear so far? Then let's start with a small example.
+                    <br><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellHead Roboto700 noto-color">Web-Component: Info-Banner</td>
+            </tr>
+            <tr>
+                <td class="ContentBoxTabCellText Roboto400">
+                    <br>
+                    In order not to make things too complicated at the beginning, we will create a simple web component here. An information banner. This info-banner component will have a few properties that we can dynamically change. In the end our component will look like this:
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">Code Example</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid01');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid01-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                           </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid01">
+                                    &lt;info-banner<br>
+                                    &nbsp;&nbsp;&nbsp;text="Hello, Web Components!"<br>
+                                    &nbsp;&nbsp;&nbsp;position="bottom"<br>
+                                    &nbsp;&nbsp;&nbsp;bgcolor="#004CDA"<br>
+                                    &nbsp;&nbsp;&nbsp;fontcolor="#FEFEFE"&gt;<br>
+                                    &lt;/info-banner&gt;
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    But it will still take a while until then. From here I will explain to you step by step my process for developing a web component like this one. And in this case I first create the folder  <strong>info-banner</strong>.
+                    <br>
+                    In this folder I create the following three files:<br><br>
+                    <ul>
+                    <li>info-banner.html</li>
+                    <li>info-banner.css</li>
+                    <li>info-banner.js</li>
+                    </ul>
+                    <br>
+                    I then open these three files in my code editor. The HTML file first receives the base code. And so that we don't forget, we'll also include our CSS file and the JS file here. So your code should look like this:
+                    <br>
+                    (the <code class="ContentBoxInlineCode">&lt;html lang=&quot;de&quot;&gt;</code> might be different in your code)
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.html</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid02');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid02-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid02">
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang=&quot;de&quot;&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;title&gt;Web-Component: info-banner&lt;/title&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;script src=&quot;info-banner.js&quot;&gt;&lt;/script&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;info-banner.css&quot;&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    <br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;<br>
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    From here we could start writing our code for the web component in the JS file. To make it clear how such a web component is structured, I will first create our web component in the HTML file in the next step. In principle, this intermediate step is not necessary, but it can help, especially with more complex components.
+                    <br><br>
+                    If you are a beginner when it comes to HTML, CSS and Javascript, I recommend that you first create your component as HTML code and then implement it later in the Javascript code.
+                    <br><br>
+                    Our info banner will be a DIV Layer that we can dynamically display at the top or bottom of the page. When creating the web component, it is important that we strictly separate the code. So don't use inline CSS or inline Javascript code.
+                    <br><br>
+                    So we now add the DIV Layer to our HTML file. We place the code between the body tags.
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.html</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid03');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid03-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid03">
+                                    &lt;body&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;div class=&quot;BannerDesign&nbsp;Roboto400&quot;&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- placeholder for the text--&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                                    &lt;/body&gt;<br>
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    Since we write the CSS code for our DIV Layer in our <strong>info-banner.css</strong>, no further changes are necessary in the HTML file. So we now open our <strong>info-banner.css</strong> and define the appearance of our DIV Layer there. I'm going to use Google Fonts (Roboto Sans) in this example for a nice font. Our DIV Layer will be 800px wide and 40px high and (depending on your needs) will be horizontally centered and aligned at the top or bottom. Let's give it a nice, blue background color with white font. Add a dark colored frame with rounded corners and we have our first layout. Our CSS file should now look like this:
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.css</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid04');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid04-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid04">
+                                    /* Import Roboto from fonts.google.com */<br>
+                                    &#64;import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');<br>
+                                    <br>
+                                    .Roboto400 {<br>
+                                    &nbsp;&nbsp;&nbsp;font-family: &quot;Roboto&quot;, sans-serif;<br>
+                                    &nbsp;&nbsp;&nbsp;font-weight: 400;<br>
+                                    &nbsp;&nbsp;&nbsp;font-style: normal;<br>
+                                    }<br><br>
+                                    .BannerDesign {<br>
+                                    &nbsp;&nbsp;&nbsp;width: 800px;<br>
+                                    &nbsp;&nbsp;&nbsp;height: 40px;<br>
+                                    &nbsp;&nbsp;&nbsp;position: fixed;<br>
+                                    &nbsp;&nbsp;&nbsp;left: 50%;<br>
+                                    &nbsp;&nbsp;&nbsp;transform: translateX(-50%);<br>
+                                    &nbsp;&nbsp;&nbsp;margin: 0px;<br>
+                                    &nbsp;&nbsp;&nbsp;padding: 6px;<br>
+                                    &nbsp;&nbsp;&nbsp;border: 1px solid rgba(51,51,51,0.8);<br>
+                                    &nbsp;&nbsp;&nbsp;border-radius: 8px;<br>
+                                    &nbsp;&nbsp;&nbsp;background-color: #00509C;<br>
+                                    &nbsp;&nbsp;&nbsp;display: table;<br>
+                                    &nbsp;&nbsp;&nbsp;font-size: 16px;<br>
+                                    &nbsp;&nbsp;&nbsp;color: #EFEFEF;<br>
+                                    }<br>
+                                    <br>
+                                    .BannerDesign p {<br>
+                                    &nbsp;&nbsp;&nbsp;display: table-cell;<br>
+                                    &nbsp;&nbsp;&nbsp;vertical-align: middle;<br>
+                                    &nbsp;&nbsp;&nbsp;text-align: center;<br>
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    With the code from the HTML and CSS files, we have already created a working template. There is no Javascript code yet. We have defined the DIV layer in our HTML page and have written the CSS code for the DIV layer in our CSS file.
+                    <br><br>
+                    Maybe a few more words about the CSS code:<br>
+                    In the current code, the DIV layer is currently horizontally centered. The text in the DIV layer is also centered horizontally and vertically. We will later dynamically adjust the alignment (top or bottom) using our Javascript code. The code is really only used to create the template. The CSS code is also later manipulated via the Javascript code.
+                    <br><br>
+                    OK. Then we are now ready to write our Javascript code. One more thing in advance. The purpose behind a web component is to create a self-contained and isolated HTML element that is independent of the rest of the code and can still interact with it. To achieve this, we will create a class in our Javascript code that will render our HTML element in a virtual Shadow DOM. And the HTML page ultimately renders this Shadow DOM for us as an isolated and independent element.
+                    <br><br>
+                    Yes I know. It all sounds a bit complicated at first. But once we have the Javascript code ready, some things will be much clearer than they are now. So let's create our Javascript file. In the first step we just define the class and the name of our web component.
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.js</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid05');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid05-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid05">
+                                    class InfoBanner extends HTMLElement {<br>
+                                    <br>
+                                    }<br>
+                                    window.customElements.define('info-banner', InfoBanner);<br>
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    The Javascript code above is the basic framework for our web component. We will now define everything that has to do with our web component within this class. So in the next step we will define a few functions in our class. For our web component we definitely need the following functionalities:
+                    <br><br>
+                    We need a constructor that allows us to access the Shadow DOM. We also need a function that creates our component and renders it within the Shadow DOM. To make our component dynamic, we need another function that can update the component. But that's still not everything. Our component should have certain attributes that we can set dynamically. This refers to the attributes such as the position (top or bottom) of the DIV layer or the text that should be displayed. So we also need a function that can process these attributes and check for changes to these attributes.
+                    <br><br>
+                    Our Javascript code should now look something like this. I've added additional comments to my code so that you'll know later what all these functions mean and what they're good for. Oh yes, the following code is your template for future web components. This code contains all the basic functionality for a web component.                    
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.js</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid06');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid06-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid06">
+                                    // Define the InfoBanner-Class.<br>
+                                    // This extends HTMLElement, which is the base class for all HTML elements.<br>
+                                    class InfoBanner extends HTMLElement {<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;// The constructor method is creating and initializing an object created with a class.<br>
+                                    &nbsp;&nbsp;&nbsp;constructor() {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Call the constructor of the parent class (HTMLElement).<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super();<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Attach a shadow root to the custom element. The 'open' mode means that the<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// shadow root can be accessed from Javascript outside the shadow root.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.attachShadow({ mode: 'open' });<br>
+                                    &nbsp;&nbsp;&nbsp;}<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;// The connectedCallback() lifecycle hook fires<br>
+                                    &nbsp;&nbsp;&nbsp;// when the element gets inserted into the DOM.<br>
+                                    &nbsp;&nbsp;&nbsp;connectedCallback() {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Call the RenderComponent method when the element is inserted into the DOM.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.RenderComponent();<br>
+                                    &nbsp;&nbsp;&nbsp;}<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;// The RenderComponent method will generate<br>
+                                    &nbsp;&nbsp;&nbsp;// the HTML content of the custom element.<br>
+                                    &nbsp;&nbsp;&nbsp;RenderComponent() {<br>
+                                    &nbsp;&nbsp;&nbsp;}<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;// The UpdateComponent method will update<br>
+                                    &nbsp;&nbsp;&nbsp;// the HTML content of the custom element.<br>
+                                    &nbsp;&nbsp;&nbsp;UpdateComponent() {<br>
+                                    &nbsp;&nbsp;&nbsp;}<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;// The static get observedAttributes method returns an array<br>
+                                    &nbsp;&nbsp;&nbsp;// of attribute names to monitor for changes.<br>
+                                    &nbsp;&nbsp;&nbsp;static get observedAttributes() {<br>
+                                    &nbsp;&nbsp;&nbsp;}<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;// The attributeChangedCallback() lifecycle hook fires<br>
+                                    &nbsp;&nbsp;&nbsp;// when an attribute is added, changed, or removed.<br>
+                                    &nbsp;&nbsp;&nbsp;attributeChangedCallback() {<br>
+                                    &nbsp;&nbsp;&nbsp;}<br>
+                                    }<br>
+                                    //Define the new custom element. This line will trigger the constructor in the InfoBanner class.<br>
+                                    //The first argument is the tag name of the new element, and the second argument is the class that controls its behavior.<br>
+                                    window.customElements.define('info-banner', InfoBanner);<br>
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    At this point we need to plan what our component should be able to do. So we need to determine which attributes our component should have. These attributes ultimately determine how dynamic our component becomes. In our example, the component should have the following attributes:
+                    <br><br>
+                    <strong>text: </strong>Sets the text that will be displayed in our banner<br>
+                    <strong>position: </strong>Positions the banner either at the top or bottom<br>
+                    <strong>bgcolor: </strong>Defines the background color of the banner<br>
+                    <strong>fontcolor: </strong>Defines the text color<br>
+                    <br>
+                    In our code we need to define the attributes we want to interact with. Our code already contains the following function: <code class="ContentBoxInlineCode">static get observedAttributes()</code>
+                    <br>
+                    Within this function we now define our attributes. The function should now look like this:                    
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.js</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid07');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid07-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid07">
+                                    static get observedAttributes() {<br>
+                                    &nbsp;&nbsp;&nbsp;// the list of observed attributes<br>
+                                    &nbsp;&nbsp;&nbsp;return ['text', 'position', 'bgcolor', 'fontcolor'];<br>
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    Now that we have set the attributes that we will dynamically change, we can now start implementing the HTML code for our component. We have to do this within the <code class="ContentBoxInlineCode">RenderComponent()</code> function.
+                    <br><br>
+                    One thing is important to know at this point:<br>
+                    So that we can process the values of the attributes when creating the component, we need to integrate our attributes into the <code class="ContentBoxInlineCode">RenderComponent()</code> and/or <code class="ContentBoxInlineCode">UpdateComponent()</code> function.
+                    <br><br>
+                    We will initially only use the <strong>text</strong> attribute in the <code class="ContentBoxInlineCode">RenderComponent()</code> function. The reason is quite simple. When we create the component, we also have to include our external CSS file. To dynamically manipulate the style properties of our component, we first need to inject our CSS code into the Shadow DOM. And that's why we will process all other attributes (like <strong>position</strong>, <strong>bgcolor</strong> and <strong>fontcolor</strong>) in the <code class="ContentBoxInlineCode">UpdateComponent()</code> function.
+                    <br><br>
+                    Your <code class="ContentBoxInlineCode">RenderComponent()</code> function should look like this now:
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.js</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid08');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid08-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid08">
+                                    RenderComponent() {<br>
+                                        &nbsp;&nbsp;&nbsp;// Get the attributes. We're going to set some default values<br>
+                                        &nbsp;&nbsp;&nbsp;// as a fallback (if there is an empty value for an attribute)<br>
+                                        &nbsp;&nbsp;&nbsp;const attrText = this.getAttribute('text') || '';<br>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;// Set the inner HTML of the shadow root<br>
+                                        &nbsp;&nbsp;&nbsp;this.shadowRoot.innerHTML = `<br>
+                                        &nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@import 'info-banner.css';<br>
+                                        &nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&lt;div class="BannerDesign&nbsp;Roboto400"&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;${attrText}&lt;/p&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;`;<br>
+                                        &nbsp;&nbsp;&nbsp;// Call the update method to update other details<br>
+                                        &nbsp;&nbsp;&nbsp;this.UpdateComponent();<br>
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    In the <code class="ContentBoxInlineCode">RenderComponent()</code> function we have injected our external <strong>info-banner.css</strong> using <code class="ContentBoxInlineCode">@import;</code>. The line <code class="ContentBoxInlineCode">this.shadowRoot.innerHTML</code> renders our component in the Shadow DOM (including the injected CSS code). We determine the text of our banner with <code class="ContentBoxInlineCode">this.getAttribute('text') || ''"</code>. We then write the text into our component with <code class="ContentBoxInlineCode">${attrText}</code>.
+                    <br><br>
+                    Right at the end of the <code class="ContentBoxInlineCode">RenderComponent()</code> function, we internally call our <code class="ContentBoxInlineCode">UpdateComponent()</code> function. We have to do this so that we can now process the other attributes.
+                    <br><br>
+                    Here are a few words for the beginners and newbies among us:
+                    <br><br>
+                    It is important to understand that in our case, we need to distinguish between attributes whether they provide content for our component or whether they control the appearance/behavior of our component. We can always process attributes that provide content directly in the <code class="ContentBoxInlineCode">RenderComponent()</code> function. But we always need to process attributes that change the appearance or behavior of our component in the <code class="ContentBoxInlineCode">UpdateComponent()</code> function. These attributes require that the CSS properties of our component exist in the Shadow DOM so that we can manipulate them. However, the CSS properties of our component are only available when we create the component itself using <code class="ContentBoxInlineCode">RenderComponent()</code>. And that's why we can only call the <code class="ContentBoxInlineCode">UpdateComponent()</code> function at the very end of our <code class="ContentBoxInlineCode">RenderComponent()</code> function.
+                    <br><br>
+                    So now let's move on to our <code class="ContentBoxInlineCode">UpdateComponent()</code> function. Here we now need to retrieve the remaining attributes and process their values/contents and apply them to our component.                    
+                    <br><br>
+                    Your <code class="ContentBoxInlineCode">UpdateComponent()</code> function should look like this now:
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.js</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid09');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid09-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid09">
+                                    UpdateComponent() {<br>
+                                        &nbsp;&nbsp;&nbsp;// Get the attributes. We're going to set some default values<br>
+                                        &nbsp;&nbsp;&nbsp;// as a fallback (if there is an empty value for an attribute)<br>
+                                        &nbsp;&nbsp;&nbsp;const attrPos = this.getAttribute('position') || 'top';<br>
+                                        &nbsp;&nbsp;&nbsp;const attrBcol= this.getAttribute('bgcolor') || '#BEBEBE';<br>
+                                        &nbsp;&nbsp;&nbsp;const attrFcol= this.getAttribute('fontcolor') || '#EFEFEF';<br>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;// Get the info-banner inside the Shadow DOM (by its css class)<br>
+                                        &nbsp;&nbsp;&nbsp;const vBanner = this.shadowRoot.querySelector('.BannerDesign');<br>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;// Check that we have a valid hex-value (if no default value)<br>
+                                        &nbsp;&nbsp;&nbsp;if (/^#[0-9A-F]{6}$/i.test(attrBcol)) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Apply the new background-color to the component<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vBanner.style.backgroundColor = attrBcol;<br>
+                                        &nbsp;&nbsp;&nbsp;}<br>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;// Same check for the font-color (if no default value)<br>
+                                        &nbsp;&nbsp;&nbsp;if (/^#[0-9A-F]{6}$/i.test(attrFcol)) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Apply the new background-color to the component<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vBanner.style.color = attrFcol;<br>
+                                        &nbsp;&nbsp;&nbsp;}<br>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;// Let's set the position of the banner<br>
+                                        &nbsp;&nbsp;&nbsp;if (attrPos === 'top' || attrPos === 'bottom') {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Set the position of the banner<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vBanner.style.position = 'fixed';<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Set the top or bottom property to 16px<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// so we have a distance to the top/bottom<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vBanner.style[attrPos] = '16px';<br>
+                                        &nbsp;&nbsp;&nbsp;}<br>
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    Okay, we're done. That means, stop! We forgot one more thing. We want our component to respond to changes in its attributes (one or more attributes are changed, or attributes are added or removed). For this we have already defined the <code class="ContentBoxInlineCode">attributeChangedCallback()</code> function in our Javascript. The <code class="ContentBoxInlineCode">attributeChangedCallback()</code> function is called every time changes are made to the attributes that we defined with <code class="ContentBoxInlineCode">static get observedAttributes()</code>. At this point we can make it easy for ourselves. When changes occur, we simply re-render our entire component.                    
+                    <br><br>
+                    Your <code class="ContentBoxInlineCode">attributeChangedCallback()</code> function should look like this now:
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.js</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid10');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid10-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid10">
+                                    attributeChangedCallback() {<br>
+                                    &nbsp;&nbsp;&nbsp;// Call the RenderComponent function to re-render the component<br>
+                                    &nbsp;&nbsp;&nbsp;this.RenderComponent();<br>
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    Congratulations. You have now created your first web component. Because we are now finished with the official part of the programming. Our CSS code is complete, the Javascript file contains the complete code to create our web component. We have implemented all the necessary functions to dynamically change the desired attributes. All we need now is an HTML file that integrates our web component and... if everything is correct and works as planned... displays it correctly.                    
+                    <br><br>
+                    So let's edit our info-banner.html and integrate our web component there. When we open the HTML file, we first remove all the code between the body tags. And since our web component comes with its own CSS, we can also remove the reference to the external stylesheet in the header. Our web component has its own HTML tag <code class="ContentBoxInlineCode">(&lt;info-banner&gt;&lt;/info-banner&gt;)</code>. We also defined four attributes (<strong>text</strong>, <strong>position</strong>, <strong>bgcolor</strong> and <strong>fontcolor</strong>). So we just use our web component just like any other HTML tag.                    
+                    <br><br>
+                    And this is now the code of your HTML file:
+                    <br><br>
+                    <table class="CodePreviewTable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="CodePrevFilename">info-banner.html</td>
+                            <td rowspan="2" class="CodePrevCopySVGicon">
+                                <svg class="ClipboardSVG" onclick="CopyCodeToClipboard('cbid11');" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0a3 3 0 0 0-3 3H5.4A2.4 2.4 0 0 0 3 5.4v15.2A2.4 2.4 0 0 0 5.4 23h13.2a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 18.6 3H15a3 3 0 0 0-3-3Zm-1 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm-5 7a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z" fill="#ffffff">
+                                </svg>
+                                <br>
+                                <div id="cbid11-okay" class="CopyOkayBox">
+                                    <svg class="CopyOkaySVG" viewBox="0 0 2134 2134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+                                        <circle class="CopyOkaySVGbgcol" cx="1066.67" cy="1066.67" r="1041.67"/>
+                                        <path class="CopyOkaySVGstroke" d="M1640.34,508.471c-23.935,-20.084 -59.673,-16.958 -79.757,6.978l-800.573,954.086c-20.084,23.935 -16.958,59.673 6.977,79.757l86.736,72.779c23.935,20.084 59.673,16.958 79.757,-6.977l800.573,-954.087c20.084,-23.935 16.957,-59.673 -6.978,-79.757l-86.735,-72.779Z"/>
+                                        <path class="CopyOkaySVGstroke" d="M551.818,1087.5c-23.935,-20.084 -59.673,-16.957 -79.757,6.978l-72.78,86.735c-20.084,23.936 -16.957,59.674 6.978,79.758l433.676,363.897c23.935,20.084 59.673,16.957 79.757,-6.978l72.779,-86.735c20.084,-23.936 16.958,-59.674 -6.978,-79.758l-433.675,-363.897Z"/>
+                                    </svg>
+                                    <span class="Roboto400 SmallCopyText">copied</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CodePrevSourceCode">
+                                <code id="cbid11">
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="de"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;title&gt;Web-Component: info-banner&lt;/title&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;script src="info-banner.js"&gt;&lt;/script&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;info-banner<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text="Hello, Web Components!"<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position="top"<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bgcolor="#0088DA"<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fontcolor="#EFEFEF"&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&lt;/info-banner&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;<br>
+                                </code>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    If you exactly followed the tutorial, your code should be correct and complete as well.<br>
+                    Then, the result of your test should exactly look like this:
+                    <br><br>
+                    <img src="tutorial/preview.png" alt="preview" class="ContentBoxImgPrev">
+                    <br><br>
+                    If you don't get this result, you should definitely check your files and compare them with this tutorial.<br>
+                    Or, you can simply work your way step by step through this tutorial again .<br><br>
+                    You know what? I have already created these files. I had to do that for this tutorial anyway. So I packed the finished files into a ZIP file, which you can download here. So if your code doesn't work then just download the sample code. It's exactly the same code as here in this tutorial.
+                    <br><br>
+                    <div class="ContentBoxDownloadLink noto-color" onclick="LoadContentPage('tutorial/tutorial-info-banner.zip');"><e-moji>&#x1f4e6;</e-moji> Download ZIP-File (tutorial-info-banner.zip [6.259 Bytes])</div>
+                    <br>
+                    OK. That's it for this tutorial.<br>
+                    I hope you enjoyed it.<br>
+                    And maybe I could inspire you a little or at least arouse your interest.
+                    <br><br>
+                    At the end it should be said that I am not describing THE ONE way to create web components. With this tutorial I have shown you a method with which you can create web components. And I kept it simple too. Of course, there are far more options for web components. This tutorial was deliberately intended to be an easy and simple introduction to the topic.
+                    <br><br>
+                    On this page I have an area for you with further examples of web components.<br>
+                    You can find more code examples there.
+                    <br><br>
+                    <div class="ContentBoxDownloadLink" onclick="(function() { LoadContentPage('examples.html'); })();"><e-moji>&#x1f4cb;</e-moji> Web Components Examples</div>
+                    <br>
+                    You can also find further information in the MDN Web Docs
+                    <div class="ContentBoxDownloadLink noto-color"  onclick="(function() { window.open('https://developer.mozilla.org/en-US/docs/Web/API/Web_components', '_blank',); })();">https://developer.mozilla.org/</div>
+                    <br><br>
+                    Have a great day.
+                    <br><br><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="SiteFooterGlassFX" class="SiteFooterGlassFX"></div>
+    <div id="SiteFooter" class="SiteFooter Roboto200 noto-color"><strong>Made with HTML <e-moji>&#x1F9E9;</e-moji> , CSS <e-moji>&#x1f58c;</e-moji> and Javascript <e-moji>&#x1f9f0;</e-moji></strong></div>
+</body>
+</html>
