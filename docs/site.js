@@ -16,6 +16,12 @@ function LoadContentPage(PageName) {
         FullURL = FullURL.substring(0, FullURL.length - "web-components/".length);
     }
 
+    // Check if we are in a sub-folder
+    if (FullURL.endsWith("demo/")) {
+        // If yes, we're shorten the URL to get the root-folder
+        FullURL = FullURL.substring(0, FullURL.length - "web-components/demo/".length);
+    }
+
     window.location.assign(FullURL+PageName);
 }
 
