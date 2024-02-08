@@ -1,5 +1,13 @@
 ## Simple Popup Information
 
+## Preview
+<p align="left">
+<img src="../../assets/preview-simple-popup.png" width="602px">
+</p>
+<br>
+
+## Details
+
 |  |  |
 |:-|-:|
 |Web Component ID: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Simple Popup|
@@ -34,6 +42,7 @@ To use this web component, you have to make sure, that the javascript file <code
 
 ```html
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

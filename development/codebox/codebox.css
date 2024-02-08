@@ -1,0 +1,85 @@
+/*
+written by praetoriani
+https://github.com/praetoriani/Web-Components
+*/
+
+/* MAIN TABLE */
+.CodeboxPreviewTable {
+    padding: 8px 0px 8px 8px;
+    border: 1px solid #000000;
+    background-color: #333333;
+    color: #CECECE;
+    border-radius: 8px;
+}
+/* TABLE CELL FOR FILE NAME */
+.CodeboxPreviewFilename {
+    height: 26px;
+    text-align: left;
+    vertical-align: top;
+}
+/* TABLE CELL FOR SVG-ICONS (COPY & COPY-OKAY) */
+.CodeboxPreviewSVG {
+    width: 28px;
+    height: auto;
+    text-align: center;
+    vertical-align: top;
+    padding: 0px 4px 0px 4px;
+}
+/* TABLE CELL FOR SOURCE CODE */
+.CodeboxPreviewSourceCode {
+    text-align: left;
+    vertical-align: top;
+    padding: 0px;
+    font-size: 12px;
+    text-wrap: wrap;
+}
+
+/* FLEXIBLE DIV CONTAINER INSIDE THE TABLE CELL FOR SOURCE CODE */
+.CodeboxPreviewFlexBox {
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: auto;
+    padding-bottom: 8px;
+    padding-right: 8px;
+}
+
+.FirefoxScrollbars {
+    /* SCROLLBAR MANIPULATION: FIREFOX ONLY*/
+    scrollbar-width: thin;
+    scrollbar-color: #CECECE #333333;
+    border-radius: 10px;
+}
+
+/* SVG ICON: CLIPBOARD */
+.CodeboxClipboardSVG {
+    width: 22px;
+    height: 22px;
+    fill: #EFEFEF;
+    cursor: pointer;
+}
+
+/* DIV FOR COPY OKAY SVG */
+.CodeboxCopyOkay {
+    visibility: hidden;
+    padding: 5px 0px 0px 0px;
+}
+
+/* SVC ICON: COPY OKAY */
+.CodeboxCopyOkaySVG {
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    stroke-linejoin:round;
+    stroke-miterlimit:2;
+    width: 20px;
+    height: 20px;
+}
+
+/* BACKGROUND COLOR FOR COPY OKAY SVG */
+.CopyOkaySVGbgcol {
+    fill: #30b000;
+}
+
+/* STROKE/PATH COLOR FOR COPY OKAY SVG */
+.CopyOkaySVGstroke {
+    fill: #ffffff;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- THIS IS A FULL EXAMPLE OF A HTML PAGE THAT USES THE CODEBOX WEB COMPONENT-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Component-Demo</title>
+    <script src="codebox.js"></script>
+    <style>
+        /*---------------------------------------------------------------------------
+        THIS CSS-CODE IS NOT PART OF THE WEB COMPONENT. IT'S ONLY FOR THIS HTML-PAGE
+        ---------------------------------------------------------------------------*/
+
+        /* Import Roboto from fonts.google.com */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+
+        .GoFoRoboto400 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+        }
+
+        .GoFoRoboto700 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 14px;
+        }
+        html, body {
+            margin: 20px;
+            padding: 0;
+            background-color: #BEBEBE;
+            overflow: auto;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <!-- CODEBOX WEB COMPONENT -->
+    <code-box cbid="DemoCodebox" header="true" sizex="auto" sizey="auto" design="white" codefont="gfsourcecode400" codesize="15px">
+        <span slot="codeboxhead" class="GoFoRoboto700">
+            Javascript Example Code:
+        </span>
+        <span slot="codeboxbody"></span>
+    </code-box>
+<script>
+var DemoScriptCode = `function WebComponentCode() {
+    console.log("Damn cool Codebox Web Component :)");
+}`
+document.querySelector('code-box').CreateCodeSnippet("DemoCodebox",DemoScriptCode);
+</script>
+</body>
+</html>
