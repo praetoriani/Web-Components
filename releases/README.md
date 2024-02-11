@@ -56,7 +56,7 @@ For some reason I don't understand, Firefox seems to have problems with spaces "
 |Last Update: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 11.02.2024|
 |Current Version: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; v1.00.25|
 |Released Date: &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp; 11.02.2024|
-|Download:       |[badge-widget-v1.00.25.zip](https://github.com/praetoriani/web-components/raw/main/releases/code-box/codebox-v1.00.25.zip)|
+|Download:       |[codebox-v1.00.25.zip](https://github.com/praetoriani/web-components/raw/main/releases/code-box/codebox-v1.00.25.zip)|
 
 
 <br>
