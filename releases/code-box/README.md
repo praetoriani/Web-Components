@@ -157,7 +157,7 @@ There is a special way to write the text/code into the Codebox. Let me explain w
 ```html
 <script>
 var DemoSourceCode = `// simple javascript function
-function CodemoxMessage() {
+function CodeboxMessage() {
     console.log("Damn cool Codebox Component");
 }`;
 document.querySelector('code-box').CreateCodeSnippet("MyCodebox",DemoSourceCode)
