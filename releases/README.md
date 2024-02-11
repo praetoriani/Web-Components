@@ -32,7 +32,7 @@ Each released/published web component has its own directory here in the release 
 |Release Date:   |                  03.02.2024|
 |File:           |   badge-widget-v1.00.16.zip|
 |Size:           |                 8.952 Bytes|
-|Download:       |[badge-widget-v1.00.16.zip](./badge-widget/badge-widget-v1.00.16.zip)|
+|Download:       |[badge-widget-v1.00.16.zip](https://github.com/praetoriani/web-components/raw/main/releases/badge-widget/badge-widget-v1.00.16.zip)|
 
 <br>
 
@@ -60,7 +60,7 @@ For some reason I don't understand, Firefox seems to have problems with spaces "
 |Release Date:   |                  08.02.2024|
 |File:           |   codebox-v1.00.22.zip|
 |Size:           |                 8.952 Bytes|
-|Download:       |[codebox-v1.00.22.zip](./codebox/codebox-v1.00.22.zip)|
+|Download:       |[codebox-v1.00.22.zip](https://github.com/praetoriani/web-components/raw/main/releases/code-box/codebox-v1.00.22.zip)|
 
 <br>
 
@@ -88,7 +88,7 @@ The Codebox component uses special CSS styles to customize the appearance and be
 |Release Date:   |                  03.02.2024|
 |File:           |   simple-popup-v1.00.16.zip|
 |Size:           |                 6.520 Bytes|
-|Download:       |[simple-popup-v1.00.16.zip](./simple-popup/simple-popup-v1.00.16.zip)|
+|Download:       |[simple-popup-v1.00.16.zip](https://github.com/praetoriani/web-components/raw/main/releases/simple-popup/simple-popup-v1.00.16.zip)|
 
 <br>
 
@@ -116,7 +116,7 @@ This web component uses shadows. Depending on the browser, these shadows are dis
 |Release Date:   |                  03.02.2024|
 |File:           |  tooltip-popup-v1.00.16.zip|
 |Size:           |                 6.578 Bytes|
-|Download:       |[tooltip-popup-v1.00.16.zip](./tooltip-popup/tooltip-popup-v1.00.16.zip)|
+|Download:       |[tooltip-popup-v1.00.16.zip](https://github.com/praetoriani/web-components/raw/main/releases/tooltip-popup/tooltip-popup-v1.00.16.zip)|
 
 <br>
 
