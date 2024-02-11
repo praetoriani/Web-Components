@@ -193,7 +193,7 @@ without any bold, italic or underline (only the bullets will remain so that it's
 
 ## How to interact with the Codebox Web Component?
 <br>
-Working with web components is different than working with HTML objects in your own document. Every time you create a tooltip, an instance of that component is rendered in an isolated Shadow DOM. However, you won't be able to get this tooltip with a normal <code>document.getElementById()</code> because the instance of the component is not directly part of the html document itself. But the Shadow DOM (in which the component was rendered in) is kind of a child element of the original document root. As you can already see it's kind of a complex theme.
+Working with web components is different than working with HTML objects in your own document. Every time you create a codebox, an instance of that component is rendered in an isolated Shadow DOM. However, you won't be able to get this codebox with a normal <code>document.getElementById()</code> because the instance of the component is not directly part of the html document itself. But the Shadow DOM (in which the component was rendered in) is kind of a child element of the original document root. As you can already see it's kind of a complex theme.
 <br><br>
 But I got a solution for that. The <b>Codebox Web Component</b> comes with an additional <code>ShadowDOM</code> Class that has some special functions. With these functions you have the ability to interact with your component. At the moment, the <code>ShadowDOM</code> Class knows the following functions :<br><br>
 
