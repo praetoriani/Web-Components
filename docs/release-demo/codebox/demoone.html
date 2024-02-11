@@ -1,0 +1,317 @@
+<!--
+written by praetoriani
+https://github.com/praetoriani/Web-Components
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Component: code-box</title>
+    <style>
+        /*---------------------------------------------------------------------------
+        THIS CSS-CODE IS NOT PART OF THE WEB COMPONENT. IT'S ONLY FOR THIS HTML-PAGE
+        ---------------------------------------------------------------------------*/
+
+        /* Import Roboto from fonts.google.com */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        /* Import Source Code Pro from fonts.google.com */
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
+
+        .GoFoRoboto400 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+        }
+
+        .GoFoRoboto700 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 14px;
+        }
+        .SourceCode14 {
+            font-family: 'Source Code Pro', monospace;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 14px;
+        }
+        .SourceCode16 {
+            font-family: 'Source Code Pro', monospace;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 16px;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #BEBEBE;
+            overflow: auto;
+            cursor: default;
+        }
+        .DemoTable {
+            width: 400px;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            max-width: 0;
+        }
+        .DemoTableCell {
+            width: 100%;
+            height: max-content;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            padding: 20px;
+        }
+    </style>
+    <script src="codebox.js"></script>
+</head>
+<body>
+    <table class="DemoTable" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="DemoTableCell">
+
+                <!-- CODEBOX WEB COMPONENT -->
+                <code-box cbid="CodeboxDemoPart1" header="true" sizex="880px" sizey="280px" design="black" codefont="gfsourcecode400" codesize="13px">
+                    <span slot="codeboxhead" class="GoFoRoboto700">
+                        CODEBOX WEB COMPONENT EXPLANATION
+                    </span>
+                    <span slot="codeboxbody">
+                    </span>
+                </code-box>
+                <br>
+                <!-- CODEBOX WEB COMPONENT -->
+                <code-box cbid="CodeboxDemoPart2" header="false" sizex="880px" sizey="280px" design="white" codefont="gfsourcecode400" codesize="14px">
+                    <span slot="codeboxhead" class="GoFoRoboto700">
+                        Source Code
+                    </span>
+                    <span slot="codeboxbody">
+                    </span>
+                </code-box>
+                <br>
+                <!-- CODEBOX WEB COMPONENT -->
+                <code-box cbid="CodeboxDemoPart3" header="false" sizex="880px" sizey="280px" design="white" codefont="gfsourcecode400" codesize="14px">
+                    <span slot="codeboxhead" class="GoFoRoboto700">
+                        Source Code
+                    </span>
+                    <span slot="codeboxbody">
+                    </span>
+                </code-box>
+                <br>
+                <!-- CODEBOX WEB COMPONENT -->
+                <code-box cbid="CodeboxDemoPart4" header="true" sizex="880px" sizey="280px" design="black" codefont="gfsourcecode400" codesize="13px">
+                    <span slot="codeboxhead" class="GoFoRoboto700">
+                        Full example of a HTML Page ( Let's call it: <u>codebox.html</u> ):
+                    </span>
+                    <span slot="codeboxbody" class="SourceCode14">
+                    </span>
+                </code-box>
+                
+            </td>
+        </tr>
+    </table>
+    <script>
+var TrueHTMLcode = `[B+][U+]USAGE INSTRUCTION: CODE-BOX COMPONENT[U-][B-]
+
+[B+]Step 1)[B-]
+Make sure, that the '[I+]codebox.js[I-]' and the '[I+]codebox.css[I-]' are in the same directory!
+
+[B+]Step 2)[B-]
+Add the following line between the head tag of your HTML file
+&lt;script src="codebox.js"&gt;&lt;/script&gt;
+(Here the HTML file is in the same directory as '[I+]codebox.js[I-]'. Please adapt the path to your conditions)
+
+[B+]Step 3)[B-]
+Following an example code how the codebox html code looks like (add the component somewhere between the body tag)
+
+
+<codebox cbid="CodeBoxID" header="true/false" sizex="600px" sizey="320px" design="black/white" codefont="..." codesize="14px">
+    <span slot="codeboxhead" class="YOUR-CSS-CLASS">
+        FILENAME.HTML
+    </span>
+    <span slot="codeboxbody" class="YOUR-CSS-CLASS">
+        <!-- MUST BE EMPTY -->
+    </span>
+</codebox>`;
+document.querySelector('code-box').CreateCodeSnippet("CodeboxDemoPart1",TrueHTMLcode);
+
+var TrueHTMLcode2 = `[B+][U+]USAGE INSTRUCTION: CODE-BOX COMPONENT (2nd PART)[U-][B-]
+
+The Codebox Component knows the following attributes
+
+[U+]cbid [B+](required)[B-][U-]
+This is a mandatory attribute. It's required to write your code into the correct codebox
+
+[U+]header [B+](required)[B-][U-]
+Whith this attribute, you can decide wether you want  header or not. This attribute
+knows only two valid arguments: '[I+]true[I-]' or '[I+]false[I-]' (as string)
+
+[U+]sizex [B+](required)[B-][U-]
+This will set the width of your codebox. Please note:
+If you want to fit the codebox size to your code, you can pass '[I+]auto[I-]' as value.
+Otherwise you need to set a vaild width in 'px' (e.g.: '400px'). The codebox
+autoativally will display scrollbars, if your code is too long
+
+[U+]sizey [B+](required)[B-][U-]
+This will set the heigth of your codebox. Please note:
+If you want to fit the codebox size to your code, you can pass '[I+]auto[I-]' as value.
+Otherwise you need to set a vaild width in 'px' (e.g.: '400px'). The codebox
+autoativally will display scrollbars, if your code is too long
+
+[U+]design [B+](required)[B-][U-]
+This attribute gives you the option to select between a dark or bright design.
+You can do this by passiing either '[I+]black[I-]' or '[I+]white[I-]' as a value to the attribute.
+
+[U+]codefont [B+](required)[B-][U-]
+The Codebox Component uses the following Google Fonts:
+[I+]Roboto Mono[I-], [I+]Noto Sans Mono[I-], [I+]Source Code Pro[I-], [I+]JetBrains Mono[I-]
+
+You can use these fonts for your code by using the Font Name + Weight.
+These are the currently available font names (all fonds are available in 300, 400 and 600)
+[BLI]gfRobotoMono
+[BLI]gfNotoMono
+[BLI]gfSourceCode
+[BLI]gfJetBrains
+
+Here is an example for JetBrains Mono 400:
+codefont="gfJetBrains400"
+Another example for Roboto Mono 300
+codefont="gfRobotoMono300"
+And a lasto one for Noto Mono 600
+codefont="gfNotoMono600"
+
+[U+]codesize [B+](required)[B-][U-]
+With this attribute you can assign a text size to the codebox.
+You have to declare it like '14px' or '12px'.
+If you forget the "px", the script will set a default size of 14px.
+
+`;
+document.querySelector('code-box').CreateCodeSnippet("CodeboxDemoPart2",TrueHTMLcode2);
+
+var TrueHTMLcode3 = `[B+][U+]USAGE INSTRUCTION: CODE-BOX COMPONENT (3rd PART)[U-][B-]
+
+You want to know now, how to write your code into the codebox component. Right?
+Okay, let's go ahead with the instructions.
+
+At this point, your component should already exists in the HTML file.
+Now you simply add &lt;script&gt; &lt;/script&gt; tags right before the &lt;/body&gt; tag.
+
+Between those script tags you can "write" your code as a string and pass it to a special function.
+Here is an example on how I did it within this demo:
+
+// Let's define a var that stores the code
+var MyScriptCode = \`function WebComponentDemo() {
+    console.log("Damn cool Codebox Web Component :)");
+}\`;
+
+document.querySelector('code-box').CreateCodeSnippet("MyCodeboxComponent",MyScriptCode);
+
+[B+][U+]Please note:[U-][B-]
+With the following line, you'll get access to the [I+]CreateCodeSnipet()[I-] function
+
+[B+]document.querySelector('code-box').CreateCodeSnippet(YOUR-CBID,YOUR-CODE)[B-]
+
+Just replace [I+]YOUR-CBID[I-] with the object id you gave the component when creating it
+(Hint: It's the string you assigned to the attribute 'cbid')
+[I+]YOUR-CODE[I-] represents the code you want to write into the codebox.
+
+[B+][U+]One more thing:[U-][B-]
+There is an option to format the code inside the codebox. You can use [B+]bold[B-] , [U+]underlined[U-] or [I+]italic[I-]
+to format your text/code. Here is how to to it. Following Markup-Code is available
+&#91;B+&#93;  ... your BOLD text ...  &#91;B-&#93;
+&#91;U+&#93;  ... your UNDERLINED text ...  &#91;U-&#93;
+&#91;I+&#93;  ... your ITALIC text ...  &#91;I-&#93;
+
+This will give you the following result:
+[B+]  ... your BOLD text ...  [B-]
+[U+]  ... your UNDERLINED text ...  [U-]
+[I+]  ... your ITALIC text ...  [I-]
+
+
+If you want to list items, you can put a &bull; in front of the line by using following Markup-Code:
+&#91;BLI&#93;First Item
+&#91;BLI&#93;Secont Item
+&#91;BLI&#93;Third Item
+
+This will give you the following result:
+[BLI]First Item
+[BLI]Second Item
+[BLI]Third Item
+
+Please note that there is no space between the &#93; and your Text.
+This will be handled by the component itself ;)
+
+[B+][U+]But keep in mind:[U-][B-] If you click on the clipboard icon in the upper right corner,
+these special markup-codes will be removed!! The result will be plain text/code
+without any bold, italic or underline (only the bullets will remain so that it's still a list).
+
+[B+]Okay, that's it folks![B-]
+I have now explained everything that concerns the Codebox component and how it works.
+I think it should now be clear how to use the component.
+You can find a fully working example of a HTML file in the next codebox
+(you simply need to put the [I+]codebox.js[I-] and the [I+]codebox.css[I-] in the same directory to use it)
+`;
+document.querySelector('code-box').CreateCodeSnippet("CodeboxDemoPart3",TrueHTMLcode3);
+
+var TrueHTMLcode4 = `
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;!-- THIS IS A FULL EXAMPLE OF A HTML PAGE THAT USES THE CODEBOX WEB COMPONENT--&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Web-Component-Demo&lt;/title&gt;
+    &lt;script src="codebox.js"&gt;&lt;/script&gt;
+    &lt;style&gt;
+        /*---------------------------------------------------------------------------
+        THIS CSS-CODE IS NOT PART OF THE WEB COMPONENT. IT'S ONLY FOR THIS HTML-PAGE
+        ---------------------------------------------------------------------------*/
+
+        /* Import Roboto from fonts.google.com */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .GoFoRoboto400 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+        }
+
+        .GoFoRoboto700 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 14px;
+        }
+        html, body {
+            margin: 20px;
+            padding: 0;
+            background-color: #BEBEBE;
+            overflow: auto;
+            cursor: default;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- CODEBOX WEB COMPONENT --&gt;
+    &lt;code-box cbid="DemoCodebox" header="true" sizex="auto" sizey="auto" design="white" codefont="gfsourcecode400" codesize="15px"&gt;
+        &lt;span slot="codeboxhead" class="GoFoRoboto700"&gt;
+            Javascript Example Code:
+        &lt;/span&gt;
+        &lt;span slot="codeboxbody"&gt;&lt;/span&gt;
+    &lt;/code-box&gt;
+&lt;script&gt;
+var DemoScriptCode = \`function WebComponentCode() {
+    console.log("Damn cool Codebox Web Component :)");
+}\`
+document.querySelector('code-box').CreateCodeSnippet("DemoCodebox",DemoScriptCode);
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+`;
+document.querySelector('code-box').CreateCodeSnippet("CodeboxDemoPart4",TrueHTMLcode4);
+    </script>        
+</body>
+</html>

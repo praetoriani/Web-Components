@@ -5,16 +5,19 @@
 <img src="../../assets/preview-codebox.png" width="600px">
 </p>
 <br>
+<a href="https://praetoriani.github.io/web-components/release-demo/codebox/demoone.html">Live Demo No.1</a><br>
+<a href="https://praetoriani.github.io/web-components/release-demo/codebox/demotwo.html">Live Demo No.2</a><br>
+<br>
 
 ## Details
 
 |  |  |
 |:-|-:|
 |Web Component ID: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Codebox|
-|Last Update: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 08.02.2024|
-|Current Version: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; v1.00.22|
+|Last Update: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 11.02.2024|
+|Current Version: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; v1.00.25|
 |Current Status: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; stable|
-|Released Version: &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp; v1.00.22|
+|Released Version: &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp; v1.00.25|
 
 <br>
 
@@ -32,6 +35,17 @@
 <br>
 <strong>General information:</strong><br>
 The Codebox component uses special CSS styles to customize the appearance and behavior of the scroll bars. Depending on the browser, these styles might be interpreted differently. This is not an error, but rather a behavior of the browser.
+
+<br>
+
+## What's new?
+<br>
+<strong><u>Changelog v1.00.25:</u></strong><br>
+<ul>
+<li>Optimized Error-Handling. The Codebox Component will only be created, if all requirements are fullfilled! Otherwise the Web Component will throw an error inside the debugging console</li>
+<li>Implemented global Properties/Objects</li>
+<li>Additional <code>ShadowDOM</code> Class added (has some specific functions to handle the Shadow DOM)</li>
+</ul>
 
 <br>
 
@@ -177,19 +191,65 @@ these special markup-codes will be removed!! The result will be plain text/code
 without any bold, italic or underline (only the bullets will remain so that it's still a list).
 <br><br>
 
+## How to interact with the Codebox Web Component?
+<br>
+Working with web components is different than working with HTML objects in your own document. Every time you create a tooltip, an instance of that component is rendered in an isolated Shadow DOM. However, you won't be able to get this tooltip with a normal <code>document.getElementById()</code> because the instance of the component is not directly part of the html document itself. But the Shadow DOM (in which the component was rendered in) is kind of a child element of the original document root. As you can already see it's kind of a complex theme.
+<br><br>
+But I got a solution for that. The <b>Codebox Web Component</b> comes with an additional <code>ShadowDOM</code> Class that has some special functions. With these functions you have the ability to interact with your component. At the moment, the <code>ShadowDOM</code> Class knows the following functions :<br><br>
+
+```javascript
+ShadowDOM.GetComponent(DOMinstance,ObjectID);
+ShadowDOM.ChangeVisibility(DOMinstance,ObjectID,ViewMode);
+```
+<b>At this point perhaps a few more words about the <code>ShadowDOM</code> Class</b><br>
+The <code>ShadowDOM</code> Class is not for a specific web component, but rather is universal and can therefore be used with any web component. With this class I try to provide appropriate functions that enable interaction with my web components.<br><br>
+<b>How to use these functions?</b><br>
+The <code>ShadowDOM.GetComponent(DOMinstance,ObjectID);</code> has two params. For the <b>Codebox Web Component</b> the <i>DOMinstance</i> is ALWAYS <code>code-box</code>. The <i>ObjectID</i> refers to the <code>cbid</code> you assigned to the <b>Codebox Web Component</b>. Here is a brief example:
+
+```javascript
+let [ ObjectExists,ObjectRef ] = ShadowDOM.GetComponent('code-box','MyOwnCodebox');
+if( ObjectExists === true ) {
+    ObjectRef.style.visibility = "hidden";
+}
+```
+The <code>ShadowDOM.GetComponent(DOMinstance,ObjectID)</code> has two return values. The first return value is either <i>true</i> or <i>false</i> (depending on whether the element could be found or not). The second return is <code>null</code> if the first return value is <code>false</code>. But if the first return value is <code>true</code>, the second return value will point to the instance of your <b>Codebox Web Component</b>. And with this you can directly manipulate the Component by yourself. You could add an event listener (for example):
+
+```javascript
+let [ ObjectExists,ObjectRef ] = ShadowDOM.GetComponent('code-box','MyOwnCodebox');
+if( ObjectExists === true ) {
+    ObjectRef.addEventListener('click', function() {
+        console.log("MyOwnCodebox was cicked :)");
+    })
+}
+```
+As you can see, the <code>ShadowDOM.GetComponent(DOMinstance,ObjectID)</code> is a powerful function that offers you a lot of possibilities. For those of us who aren't very familiar with Javascript (or who just want a quick function to show or hide the web component), there is another function:
+
+```javascript
+ShadowDOM.ChangeVisibility(DOMinstance,ObjectID,ViewMode);
+```
+The <code>ShadowDOM.ChangeVisibility(DOMinstance,ObjectID,ViewMode)</code> needs the following three params: <i>DOMinstance</i> is ALWAYS <code>code-box</code>. The <i>ObjectID</i> refers to the <code>cbid</code> you assigned to the <b>Codebox Web Component</b> and the <i>ViewMode</i> can either be <code>visible</code> or <code>hidden</code>. Here is a brief example:
+
+```javascript
+// This will show the 'MyOwnCodebox'
+ShadowDOM.ChangeVisibility('code-box','MyOwnCodebox','visible');
+
+// This will hide the 'DemoCodebox'
+ShadowDOM.ChangeVisibility('code-box','DemoCodebox','hidden');
+```
+<br><br>
+As I mentioned, the <code>ShadowDOM</code> Class doesn't have a lot of features at the moment.<br>But I'm working on implementing even more functions here to make interactions with my web components easier.
+<br><br><br><br>
+
 ## Important note about using the component
-<code>
 
-YOU ARE USING THESE FILES/SCRIPTS AT YOUR OWN RISK.
-YOU DECIDE FOR YOURSELF WHERE AND HOW YOU WANT TO
-USE THIS COMPONENT. YOU ARE RESPONSIBLE FOR ANY
-CONSEQUENCES THAT MAY RESULT FROM THE USE OF THIS
-WEB COMPONENT.
-
-I AM NOT RESPONSIBLE OR LIABLE FOR ANY PROBLEMS,
-MALFUNCTIONS, ERRORS OR OTHER DISASTERS THAT MAY
-BE CAUSED BY USING THESE FILES IN YOUR PROJECTS.
-
-THESE FILES WERE PUBLICATED UNDER THE MIT LICENSE
-
-</code>
+YOU ARE USING THESE FILES/SCRIPTS AT YOUR OWN RISK.<br>
+YOU DECIDE FOR YOURSELF WHERE AND HOW YOU WANT TO<br>
+USE THIS COMPONENT. YOU ARE RESPONSIBLE FOR ANY<br>
+CONSEQUENCES THAT MAY RESULT FROM THE USE OF THIS<br>
+WEB COMPONENT.<br>
+<br>
+I AM NOT RESPONSIBLE OR LIABLE FOR ANY PROBLEMS,<br>
+MALFUNCTIONS, ERRORS OR OTHER DISASTERS THAT MAY<br>
+BE CAUSED BY USING THESE FILES IN YOUR PROJECTS.<br>
+<br>
+THESE FILES WERE PUBLICATED UNDER THE MIT LICENSE<br>
