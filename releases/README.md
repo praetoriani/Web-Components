@@ -30,8 +30,6 @@ Each released/published web component has its own directory here in the release 
 |Last Update:    |                  02.02.2024|
 |Current version:|                    v1.00.16|
 |Release Date:   |                  03.02.2024|
-|File:           |   badge-widget-v1.00.16.zip|
-|Size:           |                 8.952 Bytes|
 |Download:       |[badge-widget-v1.00.16.zip](https://github.com/praetoriani/web-components/raw/main/releases/badge-widget/badge-widget-v1.00.16.zip)|
 
 <br>
@@ -55,12 +53,11 @@ For some reason I don't understand, Firefox seems to have problems with spaces "
 
 |  |  |
 |:-|-:|
-|Last Update:    |                  08.02.2024|
-|Current version:|                    v1.00.22|
-|Release Date:   |                  08.02.2024|
-|File:           |   codebox-v1.00.22.zip|
-|Size:           |                 8.952 Bytes|
-|Download:       |[codebox-v1.00.22.zip](https://github.com/praetoriani/web-components/raw/main/releases/code-box/codebox-v1.00.22.zip)|
+|Last Update: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 11.02.2024|
+|Current Version: &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; v1.00.25|
+|Released Date: &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp; 11.02.2024|
+|Download:       |[badge-widget-v1.00.25.zip](https://github.com/praetoriani/web-components/raw/main/releases/code-box/codebox-v1.00.25.zip)|
+
 
 <br>
 
@@ -111,12 +108,10 @@ This web component uses shadows. Depending on the browser, these shadows are dis
 
 |||
 |:-|-:|
-|Last Update:    |                  02.02.2024|
-|Current version:|                    v1.00.16|
-|Release Date:   |                  03.02.2024|
-|File:           |  tooltip-popup-v1.00.16.zip|
-|Size:           |                 6.578 Bytes|
-|Download:       |[tooltip-popup-v1.00.16.zip](https://github.com/praetoriani/web-components/raw/main/releases/tooltip-popup/tooltip-popup-v1.00.16.zip)|
+|Last Update:    |                  11.02.2024|
+|Current version:|                    v1.00.22|
+|Release Date:   |                  11.02.2024|
+|Download:       |[tooltip-popup-v1.00.22.zip](https://github.com/praetoriani/web-components/raw/main/releases/tooltip-popup/tooltip-popup-v1.00.22.zip)|
 
 <br>
 
@@ -125,13 +120,13 @@ This web component uses shadows. Depending on the browser, these shadows are dis
 | Chrome | 121.0.6167.140 | <img src="../assets/status-stable.svg" width="16"> |
 | Edge | 121.0.2277.98 | <img src="../assets/status-stable.svg" width="16"> |
 | Opera One | 106.0.4998.70 | <img src="../assets/status-stable.svg" width="16"> |
-| Firefox | 122.0 | <img src="../assets/status-remark.svg" width="16"> |
+| Firefox | 122.0 | <img src="../assets/status-stable.svg" width="16"> |
 | Safari | &nbsp; | <img src="../assets/status-failed.svg" width="16"> |
 
 <br>
 
-<strong>Release note for Firefox:</strong><br>
-Somehow there is a problem with the CSS properties regarding the tooltip pointer. The position of the pointer is displayed incorrectly. And that messes up the layout a bit. You may either see a very thin line between the pointer and the popup text, or the blunt end of the pointer extends too far into the rest of the popup (depending on the height you assign to the tooltip). At the moment I haven't found a solution that works for Chrome/Edge and Firefox. Therefore I cannot recommend using the Badge Widget with Firefox. If you still want to use the component, you do so at your own risk
+<strong>General release notes:</strong><br>
+It can happen that there might appear a tiny optical flaw at the transition from the pointer to the tooltip. This is because it can be incredibly complex to recalculate the exact position of the pointer depending on the requested tooltip size and the eventual offset of the pointer. But I can deal with this tiny flaw. So you should be able to do it too 😉
 
 <br>
 
