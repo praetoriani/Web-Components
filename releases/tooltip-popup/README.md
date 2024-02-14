@@ -199,7 +199,7 @@ As you can see, the <code>ShadowDOM.GetComponent(DOMinstance,ObjectID)</code> is
 ```javascript
 ShadowDOM.ChangeVisibility(DOMinstance,ObjectID,ViewMode);
 ```
-The <code>ShadowDOM.ChangeVisibility(DOMinstance,ObjectID,ViewMode)</code> needs the following three params: <i>DOMinstance</i> is ALWAYS <code>tooltip-popup</code>. The <i>ObjectID</i> refers to the <code>tpid</code> you assigned to the <b>Codebox Web Component</b> and the <i>ViewMode</i> can either be <code>visible</code> or <code>hidden</code>. Here is a brief example:
+The <code>ShadowDOM.ChangeVisibility(DOMinstance,ObjectID,ViewMode)</code> needs the following three params: <i>DOMinstance</i> is ALWAYS <code>tooltip-popup</code>. The <i>ObjectID</i> refers to the <code>tpid</code> you assigned to the <b>Tooltip Web Component</b> and the <i>ViewMode</i> can either be <code>visible</code> or <code>hidden</code>. Here is a brief example:
 
 ```javascript
 // This will show the 'MyOwnTooltip'
