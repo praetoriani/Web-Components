@@ -81,11 +81,10 @@ The Codebox component uses special CSS styles to customize the appearance and be
 |||
 |:-|-:|
 |Last Update:    |                  14.02.2024|
-|Current version:|                    v1.01.01|
+|Current version:|                    v1.01.06|
 |Release Date:   |                  14.02.2024|
-|File:           |      modal-win-v1.01.06.zip|
-|Size:           |                 6.520 Bytes|
-|Download:       |[modal-win-v1.00.16.zip](https://github.com/praetoriani/web-components/raw/main/releases/modal-win/modal-win-v1.01.06.zip)|
+
+|Download:       |[modal-win-v1.01.06.zip](https://github.com/praetoriani/web-components/raw/main/releases/modal-win/modal-win-v1.01.06.zip)|
 
 <br>
 
@@ -111,8 +110,7 @@ The modal window works in all browsers. Only the display may vary slightly depen
 |Last Update:    |                  02.02.2024|
 |Current version:|                    v1.00.16|
 |Release Date:   |                  03.02.2024|
-|File:           |   simple-popup-v1.00.16.zip|
-|Size:           |                 6.520 Bytes|
+
 |Download:       |[simple-popup-v1.00.16.zip](https://github.com/praetoriani/web-components/raw/main/releases/simple-popup/simple-popup-v1.00.16.zip)|
 
 <br>
