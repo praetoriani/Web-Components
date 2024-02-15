@@ -76,6 +76,34 @@ The Codebox component uses special CSS styles to customize the appearance and be
 
 <br><br>
 
+## Modal Window
+
+|||
+|:-|-:|
+|Last Update:    |                  14.02.2024|
+|Current version:|                    v1.01.01|
+|Release Date:   |                  14.02.2024|
+|File:           |      modal-win-v1.01.06.zip|
+|Size:           |                 6.520 Bytes|
+|Download:       |[modal-win-v1.00.16.zip](https://github.com/praetoriani/web-components/raw/main/releases/modal-win/modal-win-v1.01.06.zip)|
+
+<br>
+
+| Browser Name &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Version used for testing &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Compatibility Check |
+|:--|:-:|--:|
+| Chrome | 121.0.6167.140 | <img src="../assets/status-stable.svg" width="16"> |
+| Edge | 121.0.2277.98 | <img src="../assets/status-stable.svg" width="16"> |
+| Opera One | 106.0.4998.70 | <img src="../assets/status-stable.svg" width="16"> |
+| Firefox | 122.0 | <img src="../assets/status-stable.svg" width="16"> |
+| Safari | &nbsp; | <img src="../assets/status-failed.svg" width="16"> |
+
+<br>
+
+<strong>General note:</strong><br>
+The modal window works in all browsers. Only the display may vary slightly depending on the browser
+
+<br><br>
+
 ## Simple Popup
 
 |||

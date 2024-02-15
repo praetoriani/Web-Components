@@ -1,0 +1,164 @@
+/*
+written by praetoriani
+https://github.com/praetoriani/Web-Components
+*/
+
+.mwDesign-white-background {
+    background-color: #EFEFEF;
+}
+.mwDesign-white-border {
+    border: 2px solid rgba(51, 51, 51, 0.8);
+}
+.mwDesign-white-buttonbar {
+    background-color: #E4E4E4;
+}
+.mwDesign-white-button {
+    background-color: #E4E4E4;
+}
+.mwDesign-white-button:hover {
+    cursor: pointer;
+    background-color: #DADADA;
+}
+
+.mwDesign-black-background {
+    background-color: #424242;
+}
+.mwDesign-black-border {
+    border: 2px solid rgba(51, 51, 51, 0.8);
+}
+.mwDesign-black-buttonbar {
+    background-color: #4F4F4F;
+}
+.mwDesign-black-button {
+    background-color: #4F4F4F;
+}
+.mwDesign-black-button:hover {
+    cursor: pointer;
+    background-color: #585858;
+    color: #6feb1d;
+}
+
+/* ################################################## */
+
+/* THE FULLSCREEN-SHIELD BEHIND THE MODAL WINDOW */
+.modal-window-displayshield {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(48, 48, 48, 0.5);
+    z-index: 9000;
+    visibility: visible;
+}
+
+/* MODAL WINDOW LAYER */
+.modal-window-mainframe {
+    /* DIMENSIONS */
+    width: 400px;
+    height: 230px;
+    /* POSITION */
+    position: absolute;
+    top: calc((100% - 230px) / 2);
+    left: calc((100% - 400px) / 2);
+    z-index: 9001;
+    /* LAYOUT/DESIGN */
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    visibility: inherit;
+    /* STOP MAKING THINGS BIGGER ;) */
+    min-width: 0;
+    min-height: 0;
+}
+
+/* TABLE FOR THE MODAL WINDOW */
+.modal-window-maintable {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    border: none;
+}
+/* TABLE CELL FOR THE CAPTION/HEADER */
+.modal-window-headcell {
+    width: max-content;
+    height: 38px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px 8px 4px 8px;
+    margin: 0px;
+}
+/* TABLE CELL FOR THE CONTENT */
+.modal-window-bodycell {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: top;
+    padding: 0px 8px 0px 8px;
+    margin: 0px;
+}
+/* TABLE CELL FOR THE CONTENT */
+.modal-window-bodyonly {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: top;
+    padding: 8px 8px 4px 8px;
+    margin: 0px;
+}
+/* TABLE CELL FOR THE BUTTON-BAR */
+.modal-window-buttonbar {
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* TABLE FOR THE BUTTONS */
+.modalwin-button-bar {
+    /* DIMENSION */
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    border: none;
+}
+
+/* TABLE CELL FOR ONE BUTTON */
+.modalwin-button-one {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* TABLE CELL FOR TWO BUTTONS */
+.modalwin-button-two {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* TABLE CELL (SIDE) FOR THREE BUTTONS */
+.modalwin-button-thres {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* TABLE CELL (CENTER) FOR THREE BUTTONS */
+.modalwin-button-threc {
+    width: 34%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}

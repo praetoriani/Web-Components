@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Web-Component: Modal Window</title>UserDesignWindow
+    <style>
+        /*---------------------------------------------------------------------------
+        THIS CSS-CODE IS NOT PART OF THE WEB COMPONENT. IT'S ONLY FOR THIS HTML-PAGE
+        ---------------------------------------------------------------------------*/
+
+        /* Import Roboto from fonts.google.com */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .gfRoboto300 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 16px;
+        }
+
+        .gfRoboto400 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+        }
+
+        .gfRoboto700 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 16px;
+        }
+        .FontBlack {
+            color: #333333;
+        }
+        .FontWhite {
+            color: #EFEFEF;
+        }
+        .ButtonForm {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 14px;
+            color: #333333;
+            background-color: #FFFFFF;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            width: 100px;
+            height: 28px;
+        }
+        .SmallText {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 14px;
+            color: #333333;
+        }
+        html, body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #BEBEBE;
+            overflow: hidden;
+            cursor: default;
+        }
+        .DemoTable {
+            width: 50vw;
+            height: 60vh;
+            margin-left: 25vw;
+            margin-top: 20vh;
+            background-color: #EEEEEE;
+        }
+        .DemoTable td {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+    </style>
+    <script src="modal-win.js"></script>
+</head>
+<body>
+
+    <table class="DemoTable">
+        <tr>
+            <td>
+                <span class="SmallText">Demo No.1<br></span>
+                <button title="Demo1click" class="ButtonForm" onclick="ShadowDOM.ShowModalWindow('WhiteDemoWindow')">Click Me</button><br>
+                <span class="SmallText">White window, centered, with header, 2 Buttons, with shield</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="SmallText">Demo No.2<br></span>
+                <button title="Demo1click" class="ButtonForm" onclick="ShadowDOM.ShowModalWindow('BlackDemoWindow')">Click Me</button><br>
+                <span class="SmallText">Black window, top centered, no header, 3 Buttons, with shield</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="SmallText">Demo No.3<br></span>
+                <button title="Demo1click" class="ButtonForm" onclick="ShadowDOM.ShowModalWindow('ShieldlessDemo')">Click Me</button><br>
+                <span class="SmallText">White window, left, no header, 1 Button, no shield</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="SmallText">Demo No.4<br></span>
+                <button title="Demo1click" class="ButtonForm" onclick="ShadowDOM.ShowModalWindow('SpecialDemoWin')">Click Me</button><br>
+                <span class="SmallText">Black window, top/left 100, with header, 2 Buttons, no shield<br>(Tip: Click the 'More'-Button on the window)</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="SmallText">Demo No.5<br></span>
+                <button title="Demo1click" class="ButtonForm" onclick="ShadowDOM.ShowModalWindow('UserDesignWindow')">Click Me</button><br>
+                <span class="SmallText">Special window that uses user-defined css-design</span>
+            </td>
+        </tr>
+    </table>
+
+    <modal-win mwid="WhiteDemoWindow" winsize="500x330" pos="c:c" stacklvl="250" caption="true" btncount="2" shield="true:40" view="hidden" design="white">
+        <span slot="modalwin-caption-slot" class="gfRoboto700 FontBlack">Hello</span>
+        <span slot="modalwin-message-slot" class="gfRoboto300 FontBlack">
+            This is the<br><strong>Modal Window Web Component</strong><br><br>
+            The Modal Window can be configured in different ways.<br>
+            You can choose if you want a title or not.<br>
+            You can set one, two or three buttons on the window.<br>
+            You can choose between a dark and light theme.<br>
+            You can use a 'shield'<br>
+            (the shield blocks the interaction with the rest of the website)<br><br>
+            And of course you can set the width and height<br>as well as the position (top/left) of the window
+        </span>
+        <span slot="modalwin-button1-slot" class="gfRoboto400 FontBlack">Cool!</span>
+        <span slot="modalwin-button2-slot" class="gfRoboto400 FontBlack">Wow!</span>
+    </modal-win>
+
+    <modal-win mwid="BlackDemoWindow" winsize="550x180" pos="c:20" stacklvl="500" caption="false" btncount="3" shield="true:25" view="hidden" design="black">
+        <span slot="modalwin-message-slot" class="gfRoboto300 FontWhite">
+            Did I tell you that you can define individual functions for each button?<br><br>
+            You can assign a click-event for each button. And that means you can assign your own functions to the buttons. Pretty cool, huh?!<br><br>
+            Just have a look at the code to see how it works.
+        </span>
+        <span slot="modalwin-button1-slot" class="gfRoboto400 FontWhite">Okay</span>
+        <span slot="modalwin-button2-slot" class="gfRoboto400 FontWhite">Close</span>
+        <span slot="modalwin-button3-slot" class="gfRoboto400 FontWhite">Done</span>
+    </modal-win>
+
+    <modal-win mwid="ShieldlessDemo" winsize="400x180" pos="50:c" stacklvl="200" caption="false" btncount="1" shield="false:40" view="hidden" design="white">
+        <span slot="modalwin-message-slot" class="gfRoboto300 FontBlack">
+            This window has no shield. So you can still interact with the rest of the website. Just try it by clicking the 'Demo No.1' or 'Demo No.2' Button.<br><br>
+            A second window will open. This window will remain opened until it is closed by clicking its 'Close it' button
+        </span>
+        <span slot="modalwin-button1-slot" class="gfRoboto400 FontBlack">Close it</span>
+    </modal-win>
+
+    <modal-win mwid="SpecialDemoWin" winsize="450x220" pos="100:100" stacklvl="800" caption="true" btncount="2" shield="false:40" view="hidden" design="black">
+        <span slot="modalwin-caption-slot" class="gfRoboto700 FontWhite"><strong>Modal Window Interaction</strong></span>
+        <span slot="modalwin-message-slot" class="gfRoboto300 FontWhite">
+            As you may have already noticed, you can do a lot with the Modal Window. You can also switch between two windows. Just click on the 'more' button to see what I mean.<br><br>
+            By the way ... this window doesn't have a shield as well. So you can still interact with the website ;)
+        </span>
+        <span slot="modalwin-button1-slot" class="gfRoboto400 FontWhite">Close</span>
+        <span slot="modalwin-button2-slot" class="gfRoboto400 FontWhite">More</span>
+    </modal-win>
+
+<script>
+// CLICK-EVENT FOR BUTTON 1 (WhiteDemoWindow)
+let [WDMbtn1lookup,WDMbtn1object] = ShadowDOM.GetComponent("modal-win","WhiteDemoWindow-button1");
+if(WDMbtn1object) {
+    WDMbtn1object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("WhiteDemoWindow");
+        console.log("Button 'WhiteDemoWindow-button1' was clicked");
+    });
+}
+// CLICK-EVENT FOR BUTTON 2 (WhiteDemoWindow)
+let [WDMbtn2lookup,WDMbtn2object] = ShadowDOM.GetComponent("modal-win","WhiteDemoWindow-button2");
+if(WDMbtn2object) {
+    WDMbtn2object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("WhiteDemoWindow");
+        console.log("Button 'WhiteDemoWindow-button2' was clicked");
+    });
+}
+// CLICK-EVENT FOR BUTTON 1 (BlackDemoWindow)
+let [BDMbtn1lookup,BDMbtn1object] = ShadowDOM.GetComponent("modal-win","BlackDemoWindow-button1");
+if(BDMbtn1object) {
+    BDMbtn1object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("BlackDemoWindow");
+        console.log("Button 'Okay' was clicked");
+    });
+}
+// CLICK-EVENT FOR BUTTON 2 (BlackDemoWindow)
+let [BDMbtn2lookup,BDMbtn2object] = ShadowDOM.GetComponent("modal-win","BlackDemoWindow-button2");
+if(BDMbtn2object) {
+    BDMbtn2object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("BlackDemoWindow");
+        console.log("Button 'Close' was clicked");
+    });
+}
+// CLICK-EVENT FOR BUTTON 3 (BlackDemoWindow)
+let [BDMbtn3lookup,BDMbtn3object] = ShadowDOM.GetComponent("modal-win","BlackDemoWindow-button3");
+if(BDMbtn3object) {
+    BDMbtn3object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("BlackDemoWindow");
+        console.log("Button 'Done' was clicked");
+    });
+}
+// CLICK-EVENT FOR BUTTON 1 (ShieldlessDemo)
+let [SLDbtn1lookup,SLDbtn1object] = ShadowDOM.GetComponent("modal-win","ShieldlessDemo-button1");
+if(SLDbtn1object) {
+    SLDbtn1object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("ShieldlessDemo");
+        console.log("Button 'ShieldlessDemo-button1' was clicked");
+    });
+}
+// CLICK-EVENT FOR BUTTON 1 (SpecialDemoWin)
+let [SDWbtn1lookup,SDWbtn1object] = ShadowDOM.GetComponent("modal-win","SpecialDemoWin-button1");
+if(SDWbtn1object) {
+    SDWbtn1object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("SpecialDemoWin");
+        console.log("Button 'SpecialDemoWin-button1' was clicked");
+    });
+}
+// CLICK-EVENT FOR BUTTON 2 (SpecialDemoWin)
+let [SDWbtn2lookup,SDWbtn2object] = ShadowDOM.GetComponent("modal-win","SpecialDemoWin-button2");
+if(SDWbtn2object) {
+    SDWbtn2object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("SpecialDemoWin");
+        ShadowDOM.ShowModalWindow("WhiteDemoWindow");
+        console.log("Button 'SpecialDemoWin-button2' was clicked");
+    });
+}
+</script>
+
+<script>
+    // THIS LINE HAS TO BE CALLED RIGHT BEFORE THE HTML-CODE OF THE MODAL WINDOW
+    ShadowDOM.PreloadMWdesign('UserDesignWindow','#007bce','#222222','#006cb4','#14669c');
+</script>
+<!-- THIS WINDOW WILL BE CREATED WITH USER DEFINED DESIGN -->
+<modal-win mwid="UserDesignWindow" winsize="400x168" pos="c:50" stacklvl="800" caption="true" btncount="2" shield="true:40" view="hidden">
+    <span slot="modalwin-caption-slot" class="gfRoboto700 FontWhite"><strong>Modal Window User Design</strong></span>
+    <span slot="modalwin-message-slot" class="gfRoboto300 FontWhite">
+        Wow! Look at this! You can use your own colors! Honestly...isn't that pretty damn cool?! You can create your own theme and assign it to the modal window.
+    </span>
+    <span slot="modalwin-button1-slot" class="gfRoboto400 FontWhite">Inspiring</span>
+    <span slot="modalwin-button2-slot" class="gfRoboto400 FontWhite">Impressing</span>
+</modal-win>
+
+<script>
+// CLICK-EVENT FOR BUTTON 2 (SpecialDemoWin)
+let [UDWbtn1lookup,UDWbtn1object] = ShadowDOM.GetComponent("modal-win","UserDesignWindow-button1");
+if(UDWbtn1object) {
+    UDWbtn1object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("UserDesignWindow");
+        ShadowDOM.ShowModalWindow("SecretWindow");
+        console.log("Button 'UserDesignWindow-button1' was clicked");
+    });
+}
+// CLICK-EVENT FOR BUTTON 2 (SpecialDemoWin)
+let [UDWbtn2lookup,UDWbtn2object] = ShadowDOM.GetComponent("modal-win","UserDesignWindow-button2");
+if(UDWbtn2object) {
+    UDWbtn2object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("UserDesignWindow");
+        ShadowDOM.ShowModalWindow("SecretWindow");
+        console.log("Button 'UserDesignWindow-button2' was clicked");
+    });
+}
+
+</script>
+
+<script>
+    // THIS LINE HAS TO BE CALLED RIGHT BEFORE THE HTML-CODE OF THE MODAL WINDOW
+    ShadowDOM.PreloadMWdesign('SecretWindow','#57ca0a','#222222','#53be0b','#6feb1d');
+</script>
+<!-- THIS WINDOW WILL BE CREATED WITH USER DEFINED DESIGN -->
+<modal-win mwid="SecretWindow" winsize="400x168" pos="c:c" stacklvl="800" caption="true" btncount="1" shield="false:40" view="hidden">
+    <span slot="modalwin-caption-slot" class="gfRoboto700 FontBlack"><strong>Modal Window User Design</strong></span>
+    <span slot="modalwin-message-slot" class="gfRoboto300 FontBlack">
+        This is another window with a different color theme. You can apply different themes to different windows. So ... be creative and enjoy it :)
+    </span>
+    <span slot="modalwin-button1-slot" class="gfRoboto400 FontBlack">Really cool!</span>
+</modal-win>
+
+<script>
+// CLICK-EVENT FOR BUTTON  (SecretWindow)
+let [SECbtn1lookup,SECbtn1object] = ShadowDOM.GetComponent("modal-win","SecretWindow-button1");
+if(SECbtn1object) {
+    SECbtn1object.addEventListener('click', () => {
+        ShadowDOM.HideModalWindow("SecretWindow");
+        console.log("Button 'SecretWindow-button1' was clicked");
+    });
+}
+
+</script>
+</body>
+</html>
