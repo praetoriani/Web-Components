@@ -109,7 +109,6 @@ The modal window works in all browsers. Only the display may vary slightly depen
 |Last Update:    |                  02.02.2024|
 |Current version:|                    v1.00.16|
 |Release Date:   |                  03.02.2024|
-
 |Download:       |[simple-popup-v1.00.16.zip](https://github.com/praetoriani/web-components/raw/main/releases/simple-popup/simple-popup-v1.00.16.zip)|
 
 <br>
