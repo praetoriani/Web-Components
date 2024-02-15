@@ -83,7 +83,6 @@ The Codebox component uses special CSS styles to customize the appearance and be
 |Last Update:    |                  14.02.2024|
 |Current version:|                    v1.01.06|
 |Release Date:   |                  14.02.2024|
-
 |Download:       |[modal-win-v1.01.06.zip](https://github.com/praetoriani/web-components/raw/main/releases/modal-win/modal-win-v1.01.06.zip)|
 
 <br>
