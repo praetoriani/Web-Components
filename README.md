@@ -11,8 +11,15 @@
 I'm pleased that you found your way here to this repository.<br>I've been working a lot on this private project lately and made some changes to this repository as well.
 <br><br>
 This repository now has its own website (here on Github). I created this website to provide information about web components as well as to show examples of what is possible with web components. There is also a tutorial in which I explain how to create a simple web component.
-<br><br>
-**Some informations, before you visit the website:**
+<br><br><br>
+
+## News/Updates
+
+Latest Update: 15.02.2024<br>
+In the last few days I have revised the tooltip popup and published a new version. Information about this can be found in the release information. There is also another new web component. The modal window. This is a further development of the Simple Popup. The modal window offers more setting options and can be configured in almost all ways.
+<br><br><br>
+
+## Informations about the website:**
 ![Website Requirements](./assets/website-requirements.png)
 <br><br>
 I optimized my website for Google Chome and Microsoft Edge (these browsers have the largest market share).<br>
@@ -28,7 +35,7 @@ This applies to the following browsers:<br>
 <strong>Chrome</strong> , <strong>Edge</strong> , <strong>Opera</strong> , <strong>Vivaldi</strong> , <strong>Brave</strong> , <strong>Bomite</strong>
 <br><br>
 <strong>Please note</strong>
-<br><br>
+<br>
 Currently the website is not optimized for mobile devices. The website can be viewed on mobile devices, but it might be that you'll notice some issues with the layout of the website. 
 At the moment the website does not yet fully support Firefox. You might recognize some small design issues.
 <br><br>
